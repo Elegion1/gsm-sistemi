@@ -4,7 +4,8 @@ export default function Home() {
   return (
     <div>
       <main>
-        <div className="container d-flex flex-column justify-content-center align-items-center">
+        Home
+        {/* <div className="container d-flex flex-column justify-content-center align-items-center">
           <Image
             src={"/images/logo.JPG"}
             alt="Logo"
@@ -13,7 +14,7 @@ export default function Home() {
             className="image m-5"
           />
           <h1>Sito in costruzione</h1>
-        </div>
+        </div> */}
       </main>
     </div>
   );
