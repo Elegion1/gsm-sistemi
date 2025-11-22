@@ -28,6 +28,6 @@ export function proxy(req) {
 // Applica il middleware a tutte le route
 export const config = {
   matcher: [
-    '/((?!manifest.json|icons|_next|favicon.ico).*)',
+    '/((?!manifest.json|icons|_next|favicon.ico|images).*)',
   ],
 }
