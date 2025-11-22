@@ -27,5 +27,7 @@ export function proxy(req) {
 
 // Applica il middleware a tutte le route
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
-};
+  matcher: [
+    '/((?!manifest.json|icons|_next|favicon.ico).*)',
+  ],
+}
