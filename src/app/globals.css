@@ -9,8 +9,8 @@ body {
 }
 
 .image {
-  max-width: 50%;
-  height: auto;
+  height: 50vh;
+  width: auto;
 }
 
 p {

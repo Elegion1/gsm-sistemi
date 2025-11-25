@@ -19,7 +19,7 @@ export default function MaintenanceLayout({ children }) {
       <Head>
         <meta name="apple-mobile-web-app-title" content="GSM Sistemi" />
       </Head>
-      <body>
+      <body className="bg-d">
         <SeoData />
         {children}
         <BootstrapClient />
