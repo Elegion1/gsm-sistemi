@@ -33,11 +33,11 @@ export default function MaintenancePage() {
 
       <h1 className="text-center text-d mt-3">Sito in costruzione</h1>
       <h2 className="text-center fw-normal text-d">
-        Per info contattaci al numero <strong>+39 349 41 26 860</strong>
+        Per info contattaci al numero <strong>+39 327 54 12 813</strong>
       </h2>
       <h3 className="text-center fw-normal text-d">
         Oppure vieni a trovarci in{" "}
-        <strong>Via Giuseppe Cesarò, 99/c Casa Santa Erice (TP)</strong>
+        <strong>Via Giuseppe Cesarò, 99/E Casa Santa Erice (TP)</strong>
       </h3>
     </div>
   );
