@@ -1,0 +1,35 @@
+:root {
+  --font-montserrat: "Montserrat", sans-serif;
+  --col-a: #c49e5f;
+  --col-b: #16202c;
+  --col-c: #7ca5b8;
+  --col-d: #f6f7f9;
+}
+
+.bg-a {
+  background-color: var(--col-a) !important;
+}
+.bg-b {
+  background-color: var(--col-b) !important;
+}
+.bg-c {
+  background-color: var(--col-c) !important;
+}
+.bg-d {
+  background-color: var(--col-d) !important;
+}
+
+.text-a {
+  color: var(--col-a) !important;
+}
+.text-b {
+  color: var(--col-b) !important;
+}
+.text-c {
+  color: var(--col-c) !important;
+}
+.text-d {
+  color: var(--col-d) !important;
+}
+
+

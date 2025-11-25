@@ -1,25 +1,29 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import BootstrapClient from "./components/BootstrapClient";
+import BootstrapClient from "@/app/components/BootstrapClient";
 import { Montserrat } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import Head from "next/head";
-import owner from "../data/owner.json";
+import Navbar from "@/app/components/Navbar";
 
-import SeoData from "./components/SeoData";
+import SeoData from "@/app/components/SeoData";
 
 const montserrat = Montserrat({
-  variable: "--font-montserrat",
   subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal"],
 });
+
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={montserrat.variable}>
       <Head>
         <meta name="apple-mobile-web-app-title" content="GSM Sistemi" />
       </Head>
-      <body className={`${montserrat.variable}`}>
+      <body>
         <SeoData />
+        <Navbar />
         {children}
         <BootstrapClient />
       </body>
