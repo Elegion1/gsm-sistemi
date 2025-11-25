@@ -12,14 +12,13 @@ const montserrat = Montserrat({
   style: ["normal"],
 });
 
-
 export default function MaintenanceLayout({ children }) {
   return (
     <html lang="en" className={montserrat.variable}>
       <Head>
         <meta name="apple-mobile-web-app-title" content="GSM Sistemi" />
       </Head>
-      <body className="bg-d">
+      <body className="bg-b">
         <SeoData />
         {children}
         <BootstrapClient />

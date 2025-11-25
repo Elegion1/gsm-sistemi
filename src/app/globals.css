@@ -55,8 +55,16 @@ p {
   z-index: 2;
 }
 
+[class$="-card"] {
+  border: 1px solid rgb(239, 239, 239);
+}
+
+.info-card {
+  height: 150px;
+  width: 550px;
+}
+
 .product-card {
   width: 280px;
   height: 350px;
-
 }

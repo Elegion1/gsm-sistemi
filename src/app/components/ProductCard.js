@@ -13,13 +13,13 @@ export default function ProductCard({ product }) {
         height={220}
         unoptimized
         loading="lazy"
-        className="w-100"
+        className="w-100 bg-c"
       />
-      <h5 style={{ height: "44px" }} className="text-center my-2">
+      <p style={{ height: "44px" }} className="text-center my-2">
         {product.name}
-      </h5>
+      </p>
       <Button
-        className="w-100"
+        className="w-100 bg-c text-light"
         label="Acquista"
         onClick={() => (window.location.href = product.link)}
       />
