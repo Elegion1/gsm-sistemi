@@ -25,9 +25,9 @@ export default function HeroTextDynamic() {
     >
       <h1 className="fw-bold text-shadow">Efficienza, sicurezza, eleganza</h1>
       <div className="d-flex justify-content-center align-items-center flex-column">
-        <p className="text-shadow">Call to action</p>
-        <a href="" className="btn bg-a">
-          Click me
+        <p className="text-shadow">Richiedi un preventivo</p>
+        <a href="" className="btn bg-a text-d">
+          Contattaci
         </a>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { Montserrat } from "next/font/google";
 import "@/app/globals.css";
 import Head from "next/head";
 import Navbar from "@/app/components/Navbar";
-
+import Footer from "@/app/components/Footer";
 import SeoData from "@/app/components/SeoData";
 
 const montserrat = Montserrat({
@@ -13,7 +13,6 @@ const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal"],
 });
-
 
 export default function RootLayout({ children }) {
   return (
@@ -25,6 +24,7 @@ export default function RootLayout({ children }) {
         <SeoData />
         <Navbar />
         {children}
+        <Footer />
         <BootstrapClient />
       </body>
     </html>

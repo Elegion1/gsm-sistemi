@@ -1,31 +1,19 @@
 import Image from "next/image";
-import HeroBottom from "./HeroBottom";
-import HeroTextDynamic from "./HeroTextDynamic";
 
-const heroItems = [
-  "qualità certificata",
-  "efficienza energetica",
-  "design su misura",
-  "installazione professionale",
-];
-
-export default function Hero() {
+export default function Hero({ params }) {
   return (
-    <>
-      <section>
-        <div className="hero">
+    <section>
+      <div className="hero">
+        <div style={{ width: "100%", height: "40vh", position: "relative" }}>
           <Image
             src="/images/image.png"
             alt="Hero Image"
-            width={2500}
-            height={1801}
-            style={{ width: "100%", height: "auto" }}
+            fill
+            style={{ objectFit: "cover" }}
             priority
           />
         </div>
-        <HeroTextDynamic />
-      </section>
-      <HeroBottom items={heroItems} />
-    </>
+      </div>
+    </section>
   );
 }
