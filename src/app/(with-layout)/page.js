@@ -31,7 +31,7 @@ export default function Home() {
     <>
       <Hero />
       <main>
-        <div className="px-5 d-flex flex-column gap-5 my-5">
+        <div className="px-5 d-flex flex-column gap-5 my-5 w-75 mx-auto">
           <section id="chi-siamo">
             <h2 className="text-uppercase fw-medium text-center">Chi siamo</h2>
             <p className="text-center mt-4 fs-4 fw-normal">

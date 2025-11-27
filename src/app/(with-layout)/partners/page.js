@@ -29,13 +29,18 @@ const infoCardData = [
 export default function PartnersPage() {
   return (
     <>
-      <Hero />
+      <Hero
+        title={"I nostri partners"}
+        description={`Scopri i nostri partners e le collaborazioni di ${owner.companyName} nel settore degli infissi, serramenti, porte e zanzariere a ${owner.address.city}.`}
+        image="/images/hero.png"
+      />
       <div className="my-5 px-5 d-flex flex-column gap-5">
         <section className="d-flex justify-content-center align-items-center gap-5 flex-wrap">
           {infoCardData.map(({ title }, index) => (
             <InfoCard key={index} title={title} />
           ))}
         </section>
+
         <section>
           <h2 className="text-uppercase fw-medium text-center">
             i nostri partners
@@ -45,21 +50,21 @@ export default function PartnersPage() {
             soluzioni di qualità, garantendo installazioni sicure, prodotti
             certificati e assistenza costante.
           </h3>
-          <div className="d-flex flex-wrap justify-content-around align-items-center gap-5 mt-4">
+          <div className="d-flex flex-wrap justify-content-around align-items-center gap-5 mt-4 w-75 mx-auto">
             {partners.map((partner, index) => (
-              <div
-                key={index}
-                className="partner position-relative d-flex justify-content-center align-items-center p-3"
-                style={{ width: 200, height: 200 }}
+              <Link
+                target="_blank"
+                href={partner.link}
+                className="text-decoration-none"
               >
                 <div
-                  className={`${partner.background}`}
-                  style={{ padding: "10px", display: "inline-block" }}
+                  key={index}
+                  className="partner position-relative d-flex justify-content-center align-items-center p-3"
+                  style={{ width: 200, height: 200 }}
                 >
-                  <Link
-                    target="_blank"
-                    href={partner.link}
-                    className="text-decoration-none"
+                  <div
+                    className={`p-3 ${partner.background}`}
+                    style={{ display: "inline-block" }}
                   >
                     <Image
                       src={partner.logo}
@@ -69,14 +74,14 @@ export default function PartnersPage() {
                       style={{ objectFit: "contain" }}
                       loading="lazy"
                     />
-                  </Link>
+                  </div>
+                  <div className="partner-overlay position-absolute bottom-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center p-2">
+                    <p className="text-white fw-normal text-center">
+                      {partner.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="partner-overlay position-absolute bottom-50 start-0 w-100 h-100 d-flex justify-content-center align-items-center p-2">
-                  <p className="text-white fw-normal text-center">
-                    {partner.description}
-                  </p>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
@@ -93,6 +98,7 @@ export default function PartnersPage() {
             Riceviamo formazione continua sulle nuove tecnologie
           </p>
         </section>
+
         <section>
           <h2 className="text-uppercase fw-medium text-center">
             Diventa nostro partner

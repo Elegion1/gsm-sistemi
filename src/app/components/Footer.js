@@ -4,7 +4,7 @@ import links from "@/data/links.json";
 
 export default function Footer() {
   return (
-    <footer className="bg-b vw-100 px-5 pt-5 footer">
+    <footer className="bg-b vw-100 px-5 pt-5 pb-3 footer">
       <div className="row">
         <div className="col-md-4 col-12 d-flex justify-content-between flex-column mb-4">
           <Image

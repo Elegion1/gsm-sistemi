@@ -30,38 +30,26 @@ p {
   background-color: var(--col-b);
   opacity: 1;
   height: 19.22dvh;
-  transition: all 0.5s ease;
   max-height: 200px;
 }
 
 .navbar-large {
   flex-direction: column;
   justify-content: center;
-  padding: 25px 0;
-}
-
-.navbar-large .navbar-links {
-  margin-top: 15px;
-  flex-direction: row;
-  justify-content: center;
+  transition: all 2s ease;
 }
 
 .navbar-large .navbar-logo {
   transform: scale(1);
-  transition: all 0.3s ease;
 }
 
 .navbar-shrink {
+  transition: all 2s ease;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 40px;
   opacity: 0.9;
   backdrop-filter: blur(6px);
   height: 8dvh;
-}
-
-.navbar-shrink .navbar-links {
-  margin-top: 0;
 }
 
 .navbar-shrink .navbar-logo {
@@ -112,7 +100,6 @@ p {
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   transition: opacity 0.3s ease;
-  padding: 10px;
 }
 
 .partner:hover .partner-overlay {
