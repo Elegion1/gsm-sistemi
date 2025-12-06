@@ -1,4 +1,5 @@
 import Hero from "@/app/components/Hero";
+import PageLayout from "@/app/components/PageLayout";
 import partners from "@/data/partners.json";
 import owner from "@/data/owner.json";
 import Image from "next/image";
@@ -33,9 +34,11 @@ export default function PartnersPage() {
         title={"I nostri partners"}
         description={`Scopri i nostri partners e le collaborazioni di ${owner.companyName} nel settore degli infissi, serramenti, porte e zanzariere a ${owner.address.city}.`}
         image="/images/hero.png"
+        imagePosition={"center"}
+        imageHeight="70vh"
       />
-      <div className="my-5 px-5 d-flex flex-column gap-5">
-        <section className="d-flex justify-content-center align-items-center gap-5 flex-wrap">
+      <PageLayout>
+        <section className="d-flex justify-content-center align-items-center gap-md-5 gap-3 flex-wrap">
           {infoCardData.map(({ title }, index) => (
             <InfoCard key={index} title={title} />
           ))}
@@ -50,15 +53,15 @@ export default function PartnersPage() {
             soluzioni di qualità, garantendo installazioni sicure, prodotti
             certificati e assistenza costante.
           </h3>
-          <div className="d-flex flex-wrap justify-content-around align-items-center gap-5 mt-4 w-75 mx-auto">
+          <div className="d-flex flex-wrap justify-content-around align-items-center gap-md-5 gap-1 mt-4 w-md-75 mx-auto">
             {partners.map((partner, index) => (
               <Link
+                key={index}
                 target="_blank"
                 href={partner.link}
                 className="text-decoration-none"
               >
                 <div
-                  key={index}
                   className="partner position-relative d-flex justify-content-center align-items-center p-3"
                   style={{ width: 200, height: 200 }}
                 >
@@ -114,7 +117,7 @@ export default function PartnersPage() {
             </Link>
           </div>
         </section>
-      </div>
+      </PageLayout>
     </>
   );
 }

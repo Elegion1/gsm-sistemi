@@ -1,32 +1,81 @@
 [
-    {
-        "title": "Cambio porte interne",
-        "image": "https://picsum.photos/400/300?random=1",
-        "description": "Installazione di nuove porte interne in un appartamento residenziale.",
-        "date": "2024-05-15"
-    },
-    {
-        "title": "Ristrutturazione bagno",
-        "image": "https://picsum.photos/400/300?random=2",
-        "description": "Ristrutturazione completa di un bagno con nuovi sanitari e piastrelle.",
-        "date": "2024-06-01"
-    },
-    {
-        "title": "Installazione impianto elettrico",
-        "image": "https://picsum.photos/400/300?random=3",
-        "description": "Realizzazione di un nuovo impianto elettrico in un edificio commerciale.",
-        "date": "2024-04-20"
-    } ,
-    {
-        "title": "Pavimentazione esterna",
-        "image": "https://picsum.photos/400/300?random=4",
-        "description": "Posa di nuove piastrelle per l'area esterna di un giardino.",
-        "date": "2024-05-30"
-    },
-    {
-        "title": "Rifacimento tetto",
-        "image": "https://picsum.photos/400/300?random=5",
-        "description": "Sostituzione del tetto di una casa con materiali isolanti di ultima generazione.",
-        "date": "2024-06-10"
-    }
+  {
+    "title": "installazione oscuranti",
+    "images": [
+      {
+        "path": "/images/jobs/job 1.JPG",
+        "description": "installazione oscuranti"
+      },
+      {
+        "path": "/images/jobs/job 6.JPG",
+        "description": "installazione oscuranti"
+      },
+      {
+        "path": "/images/jobs/job 9.JPG",
+        "description": "installazione oscuranti"
+      },
+      {
+        "path": "/images/jobs/job 13.JPG",
+        "description": "installazione oscuranti"
+      }
+    ],
+    "description": "installazione oscuranti",
+    "date": "2024-05-15",
+    "id": "ade124c2-b304-4831-998f-eb66ef5a661e"
+  },
+  {
+    "title": "installazione zanzariere",
+    "images": [
+      {
+        "path": "/images/jobs/job 12.JPG",
+        "description": "installazione zanzariere"
+      },
+      {
+        "path": "/images/jobs/job 16.JPG",
+        "description": "installazione zanzariere"
+      }
+    ],
+    "description": "installazione zanzariere",
+    "date": "2024-06-01",
+    "id": "1e4cc5d7-0ced-4021-9a8e-a276a58f5de4"
+  },
+  {
+    "title": "installazione zanzariera",
+    "images": [
+      {
+        "path": "/images/jobs/job 2.JPG"
+      }
+    ]
+  },
+  {
+    "title": "installazione zanzariera",
+    "images": [{ "path": "/images/jobs/job 3.JPG" }]
+  },
+  {
+    "title": "installazione zanzariera",
+    "images": [{ "path": "/images/jobs/job 4.JPG" }]
+  },
+  {
+    "title": "installazione zanzariera",
+    "images": [{ "path": "/images/jobs/job 7.jpg" }]
+  },
+  {
+    "title": "installazione zanzariera",
+    "images": [
+      { "path": "/images/jobs/job 10.JPG" },
+      { "path": "/images/jobs/job 15.JPG" }
+    ]
+  },
+  {
+    "title": "installazione tende oscuranti",
+    "images": [{ "path": "/images/jobs/job 11.JPG" }]
+  },
+  {
+    "title": "i nostri partner",
+    "images": [
+      { "path": "/images/jobs/job 5.JPG" },
+      { "path": "/images/jobs/job 8.JPG" },
+      { "path": "/images/jobs/job 14.JPG" }
+    ]
+  }
 ]

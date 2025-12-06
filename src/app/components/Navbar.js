@@ -12,50 +12,62 @@ const navItems = [
 
 export default function Navbar() {
   const [shrink, setShrink] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkSize = () => {
+      setIsMobile(window.innerWidth < 768); // breakpoint tablet/mobile
+    };
+
+    checkSize();
+    window.addEventListener("resize", checkSize);
+
     const handleScroll = () => {
-      const triggerPoint = window.innerHeight * 0.8;
-      setShrink(window.scrollY > triggerPoint);
+      if (!isMobile) {
+        setShrink(window.scrollY > 50);
+      } else {
+        setShrink(false); // blocca shrink su mobile
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+
+    return () => {
+      window.removeEventListener("resize", checkSize);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMobile]);
 
   return (
     <nav
-      className={`navbar fixed-top w-100 d-flex align-items-center ${
-        shrink ? "navbar-shrink p-2" : "navbar-large p-4"
+      className={`navbar fixed-top w-100 d-flex align-items-center justify-content-md-between justify-content-center px-md-4 ${
+        shrink ? "navbar-shrink" : ""
       }`}
     >
       <Link href="/">
         <Image
           src="/images/logo_long.svg"
-          alt="Logo"
-          width={366}
-          height={75}
-          style={{ objectFit: "contain" }}
-          className="navbar-logo"
+          alt="logo-gsm-sistemi"
+          width={shrink ? 180 : 260}
+          height={shrink ? 40 : 60}
+          style={{ objectFit: "contain", transition: "all 0.3s ease" }}
         />
       </Link>
 
-      <ul
-        className={`navbar-links list-unstyled d-flex gap-4 ${
-          shrink ? "m-4" : "mb-0 mt-4"
-        }`}
-      >
-        {navItems.map((item) => (
-          <li key={item.name}>
-            <a
-              href={item.link}
-              className="text-uppercase text-reset text-decoration-none fw-semibold text-c"
-            >
-              {item.name}
-            </a>
-          </li>
-        ))}
-      </ul>
+      <div className="m-0 d-none d-md-block">
+        <ul className="list-unstyled d-flex gap-4 m-0">
+          {navItems.map((item) => (
+            <li key={item.name}>
+              <Link
+                href={item.link}
+                className="text-uppercase text-reset text-decoration-none fw-semibold text-c"
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }

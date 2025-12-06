@@ -1,0 +1,42 @@
+[
+  {
+    "name": "consulenza",
+    "description": "Ti aiutiamo a individuare la soluzione più adatta alle tue esigenze, valutando materiali, funzionalità, isolamento ed estetica.",
+    "id": "ff552575-d773-4c8c-96c4-776ec4185791"
+  },
+  {
+    "name": "progettazione 3d",
+    "description": "Realizziamo render e simulazioni 3D per visualizzare il risultato finale prima della produzione e dell’installazione.",
+    "id": "84ba3e2f-b3ed-422d-8dbf-0675bced7f16"
+  },
+  {
+    "name": "preventivi",
+    "description": "Offriamo preventivi chiari e dettagliati, con soluzioni su misura in base al budget e alle specifiche richieste.",
+    "id": "d032e784-6fef-4c91-9a5d-2c1571cf5f31"
+  },
+  {
+    "name": "sopralluoghi",
+    "description": "Effettuiamo sopralluoghi accurati per misurazioni precise e per valutare lo stato dell’immobile e le soluzioni applicabili.",
+    "id": "3dcb818c-96a7-4587-b4a6-f77182dd7b58"
+  },
+  {
+    "name": "posa in opera",
+    "description": "Installazione professionale e certificata, svolta da tecnici qualificati per garantire performance, sicurezza e durata nel tempo.",
+    "id": "2d3da65a-b1b9-4fbb-a571-ade2d9ef006e"
+  },
+  {
+    "name": "consegna",
+    "description": "Gestiamo la consegna dei materiali e dei prodotti con la massima cura, nel rispetto delle tempistiche concordate.",
+    "id": "33b2d471-a028-4e19-9eb0-b1ab8177ccbd"
+  },
+  {
+    "name": "agevolazioni fiscali",
+    "description": "Supporto nella scelta e nella gestione delle detrazioni fiscali disponibili per interventi di ristrutturazione ed efficienza energetica.",
+    "id": "f038ea30-15ec-4517-9be3-d8c206e847b1"
+  },
+  {
+    "name": "forniture per aziende",
+    "description": "Servizi dedicati per imprese, cantieri e professionisti: forniture su larga scala, supporto tecnico e gestione delle tempistiche.",
+    "id": "8c2a63b0-6bcc-4485-b5f6-ab2737037d36"
+  }
+]

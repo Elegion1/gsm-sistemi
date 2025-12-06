@@ -1,92 +1,128 @@
 [
   {
     "name": "Infissi in PVC",
-    "image": "https://picsum.photos/seed/infissi-pvc/400/400",
-    "link": "/prodotti/infissi-pvc"
+    "description": "Scopri il comfort senza compromessi con gli infissi in PVC: mantieni la casa calda in inverno e fresca in estate, con un eccellente isolamento acustico. Resistenti agli agenti atmosferici e facili da pulire, uniscono praticità e design moderno. Scegli tra colori e finiture eleganti per valorizzare ogni ambiente",
+    "image": "/images/products/infissi-in-pvc.png",
+    "slug": "infissi-pvc",
+    "id": "70c26741-8146-49e8-9add-093384b52ed5"
   },
   {
     "name": "Serramenti in Alluminio",
-    "image": "https://picsum.photos/seed/serramenti-alluminio/400/400",
-    "link": "/prodotti/serramenti-alluminio"
+    "description": "Eleganti, leggeri e incredibilmente resistenti: i serramenti in alluminio trasformano la tua casa, garantendo sicurezza e performance. Profili a taglio termico assicurano isolamento termico e acustico di alto livello. Design contemporaneo e manutenzione minima per una scelta senza pensieri",
+    "image": "/images/products/serramenti-in-alluminio.png",
+    "slug": "serramenti-alluminio",
+    "id": "899f2473-e39a-478f-ba5b-56dcab4b9742"
   },
   {
     "name": "Porte Blindate",
-    "image": "https://picsum.photos/seed/porte-blindate/400/400",
-    "link": "/prodotti/porte-blindate"
+    "description": "Proteggi la tua casa senza rinunciare allo stile con le porte blindate, robuste e sicure. Materiali di alta qualità resistono agli urti e agli accessi indesiderati, mentre le finiture eleganti completano l’arredamento. Sicurezza e design insieme in un unico prodotto",
+    "image": "/images/products/porte-blindate.png",
+    "slug": "porte-blindate",
+    "id": "970194c2-1ffe-451a-967d-c186ef454eb9"
   },
   {
     "name": "Zanzariere su Misura",
-    "image": "https://picsum.photos/seed/zanzariere-su-misura/400/400",
-    "link": "/prodotti/zanzariere-su-misura"
+    "description": "Goditi l’estate senza fastidi: le zanzariere su misura proteggono dagli insetti senza oscurare la luce naturale. Facili da installare e personalizzabili, combinano praticità, eleganza e comfort. Rendi la tua casa più sicura e accogliente in ogni stagione",
+    "image": "/images/products/zanzariere-su-misura.png",
+    "slug": "zanzariere-su-misura",
+    "id": "64c03da5-ce6b-42e3-ad4b-5ec9abd242cf"
   },
   {
     "name": "Box Doccia",
-    "image": "https://picsum.photos/seed/box-doccia/400/400",
-    "link": "/prodotti/box-doccia"
+    "description": "Rinnova il tuo bagno con i box doccia dal design moderno e funzionale. Vetro temperato e materiali resistenti assicurano sicurezza e facilità di pulizia. Scegli la forma e le dimensioni perfette per il tuo spazio, combinando estetica e praticità",
+    "image": "/images/products/box-doccia.png",
+    "slug": "box-doccia",
+    "id": "7547da46-011c-48e6-97db-a56298f3ba18"
   },
   {
     "name": "Porte Interne",
-    "image": "https://picsum.photos/seed/porte-interne/400/400",
-    "link": "/prodotti/porte-interne"
+    "description": "Definisci gli spazi con eleganza grazie alle porte interne di alta qualità. Materiali robusti e finiture curate garantiscono durata e stile. Perfette per ogni ambiente, valorizzano l’arredamento con un tocco raffinato",
+    "image": "/images/products/porte-interne.png",
+    "slug": "porte-interne",
+    "id": "578de462-3277-48dd-a7ed-17a1baca8912"
   },
   {
     "name": "Porte a Soffietto",
-    "image": "https://picsum.photos/seed/porte-soffietto/400/400",
-    "link": "/prodotti/porte-soffietto"
+    "description": "Soluzioni salvaspazio che uniscono praticità e design: le porte a soffietto ottimizzano ogni ambiente senza rinunciare allo stile. Facili da aprire e chiudere, sono disponibili in vari materiali e finiture. Perfette per appartamenti e stanze compatte",
+    "image": "/images/products/porte-a-soffietto.png",
+    "slug": "porte-soffietto",
+    "id": "95c7d924-b061-4e0e-9800-ac36434d6fcc"
   },
   {
     "name": "Tapparelle",
-    "image": "https://picsum.photos/seed/tapparelle/400/400",
-    "link": "/prodotti/tapparelle"
+    "description": "Comfort e sicurezza con un semplice gesto: le tapparelle offrono isolamento termico e protezione solare. Disponibili in versioni manuali o motorizzate, si integrano armoniosamente con ogni facciata. Design curato e praticità per la tua casa",
+    "image": "/images/products/tapparelle.png",
+    "slug": "tapparelle",
+    "id": "df10e297-9732-47f9-bedc-cdff0c646c39"
   },
   {
     "name": "Tende da Sole",
-    "image": "https://picsum.photos/seed/tende-sole/400/400",
-    "link": "/prodotti/tende-da-sole"
+    "description": "Crea spazi freschi e accoglienti con le tende da sole, proteggendo la tua casa dai raggi solari. Resistenti agli agenti atmosferici e disponibili in diversi modelli e tessuti, uniscono funzionalità e stile. Ideali per balconi, terrazzi e giardini",
+    "image": "/images/products/tende-da-sole.png",
+    "slug": "tende-da-sole",
+    "id": "0ffca9c1-02eb-44e2-9c23-eacd202e818b"
   },
   {
     "name": "Tende Oscuranti",
-    "image": "https://picsum.photos/seed/tende-oscuranti/400/400",
-    "link": "/prodotti/tende-oscuranti"
+    "description": "Rendi la tua camera un rifugio perfetto: le tende oscuranti garantiscono privacy e buio totale, ideali per il riposo o per lavorare senza distrazioni. Tessuti di alta qualità e design elegante, facili da montare e pulire",
+    "image": "/images/products/tende-oscuranti.png",
+    "slug": "tende-oscuranti",
+    "id": "eccd7f4a-4c68-46e4-82bf-9286a523f8a4"
   },
   {
     "name": "Tende Tecniche",
-    "image": "https://picsum.photos/seed/tende-tecniche/400/400",
-    "link": "/prodotti/tende-tecniche"
+    "description": "Innovazione e stile in ogni ambiente: le tende tecniche permettono di gestire luce e calore con precisione. Perfette per uffici e case moderne, offrono funzionalità avanzate e design ricercato. Soluzioni su misura per comfort e estetica",
+    "image": "/images/products/tende-tecniche.png",
+    "slug": "tende-tecniche",
+    "id": "1e30f6f5-8044-45a5-b1ce-d9c57b536613"
   },
   {
     "name": "Infissi in Alluminio",
-    "image": "https://picsum.photos/seed/infissi-alluminio/400/400",
-    "link": "/prodotti/infissi-alluminio"
+    "description": "Dai un tocco moderno alla tua casa con gli infissi in alluminio: resistenti, leggeri e dal design elegante. Perfetti per grandi vetrate, assicurano isolamento termico e acustico ottimale. Una scelta duratura che unisce stile e performance",
+    "image": "/images/products/infissi-in-alluminio.png",
+    "slug": "infissi-alluminio",
+    "id": "25aaff33-5ec5-44eb-aa9b-7c8a5b55905c"
   },
   {
     "name": "Infissi in Legno",
-    "image": "https://picsum.photos/seed/infissi-legno/400/400",
-    "link": "/prodotti/infissi-legno"
+    "description": "Calore e naturalezza per la tua abitazione: gli infissi in legno offrono isolamento termico e acustico, combinando eleganza e funzionalità. Disponibili in diverse essenze e finiture, valorizzano ogni stanza con un tocco raffinato",
+    "image": "/images/products/infissi-in-legno.png",
+    "slug": "infissi-legno",
+    "id": "6f820499-fb11-4561-9e14-88a5b35f2721"
   },
   {
     "name": "Infissi Legno/Alluminio",
-    "image": "https://picsum.photos/seed/infissi-legno-alluminio/400/400",
-    "link": "/prodotti/infissi-legno-alluminio"
+    "description": "Il meglio di due mondi: gli infissi legno/alluminio uniscono la bellezza del legno interno alla resistenza dell’alluminio esterno. Isolamento termico ottimale, protezione dagli agenti atmosferici e design moderno in un unico prodotto di alta qualità",
+    "image": "/images/products/infissi-in-legno-alluminio.png",
+    "slug": "infissi-legno-alluminio",
+    "id": "5ae1f965-eeaa-4efc-9bd5-0d7cf3eb376c"
   },
   {
     "name": "Vetrate Panoramiche",
-    "image": "https://picsum.photos/seed/vetrate-panoramiche/400/400",
-    "link": "/prodotti/vetrate-panoramiche"
+    "description": "Amplia gli spazi e lascia entrare la luce: le vetrate panoramiche trasformano la tua casa in ambienti luminosi e ariosi. Vetro temperato e profili robusti garantiscono sicurezza e isolamento. Eleganza e comfort in ogni stanza",
+    "image": "/images/products/vetrate-panoramiche.png",
+    "slug": "vetrate-panoramiche",
+    "id": "e6dd2c48-96c9-4684-8269-f2b9d4a236a7"
   },
   {
     "name": "Pergole Bioclimatiche",
-    "image": "https://picsum.photos/seed/pergole-bioclimatiche/400/400",
-    "link": "/prodotti/pergole-bioclimatiche"
+    "description": "Vivi all’aperto tutto l’anno con le pergole bioclimatiche: regolano luce e ventilazione per creare spazi confortevoli. Strutture robuste e design elegante si integrano perfettamente con giardini e terrazzi. Comfort, stile e funzionalità senza compromessi",
+    "image": "/images/products/pergole-bioclimatiche.png",
+    "slug": "pergole-bioclimatiche",
+    "id": "be2aaf4f-6098-4143-b642-be2dc83a98eb"
   },
   {
     "name": "Pavimentazione in SPC",
-    "image": "https://picsum.photos/seed/spc/400/400",
-    "link": "/prodotti/pavimentazione-spc"
+    "description": "Resistente, impermeabile e facile da pulire: la pavimentazione in SPC unisce praticità e design. Simula perfettamente legno o pietra, conferendo stile e comfort agli ambienti. Installazione semplice e manutenzione minima per una scelta duratura",
+    "image": "/images/products/pavimentazione-in-spc.png",
+    "slug": "pavimentazione-spc",
+    "id": "0a842441-577f-427b-8ce1-0065f8a62e7b"
   },
   {
     "name": "Parquet",
-    "image": "https://picsum.photos/seed/parquet/400/400",
-    "link": "/prodotti/parquet"
+    "description": "Eleganza e calore naturale per la tua casa: il parquet valorizza ogni stanza con finiture pregiate e materiali di qualità. Facile da pulire e mantenere, garantisce comfort e durata nel tempo. Una scelta di classe che unisce estetica e funzionalità",
+    "image": "/images/products/parquet.png",
+    "slug": "parquet",
+    "id": "98286ae2-a170-47d6-8463-8b82e528a768"
   }
 ]

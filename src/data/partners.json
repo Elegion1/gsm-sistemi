@@ -3,87 +3,101 @@
     "name": "Alessi porte",
     "logo": "/images/partners/alessi-porte.png",
     "link": "https://www.alessiporte.it",
-    "description": "Azienda specializzata nella produzione e commercializzazione di porte per interni, blindate e tagliafuoco, offrendo soluzioni per l'accesso e la sicurezza."
+    "description": "Azienda specializzata nella produzione e commercializzazione di porte per interni, blindate e tagliafuoco, offrendo soluzioni per l'accesso e la sicurezza.",
+    "id": "3ab9e019-ab29-4a8f-929f-0057ddb96340"
   },
   {
     "name": "Bettio",
     "logo": "/images/partners/bettio.png",
     "link": "https://www.bettio.it",
-    "description": "Leader nella produzione di zanzariere e sistemi di protezione dagli insetti, con un'ampia gamma di modelli adatti a finestre e porte-finestre."
+    "description": "Leader nella produzione di zanzariere e sistemi di protezione dagli insetti, con un'ampia gamma di modelli adatti a finestre e porte-finestre.",
+    "id": "ba224b4a-ad1f-470d-b2bf-e9da73abb073"
   },
   {
     "name": "Sharknet",
     "logo": "/images/partners/sharknet.png",
     "link": "https://www.sharknet.it",
-    "description": "Produttore di zanzariere e sistemi di schermatura innovativi, noti per la qualità dei materiali e la praticità d'uso dei loro prodotti."
+    "description": "Produttore di zanzariere e sistemi di schermatura innovativi, noti per la qualità dei materiali e la praticità d'uso dei loro prodotti.",
+    "id": "4a92c1ad-7bad-482c-b041-3ff74cd42e2d"
   },
   {
     "name": "Zanzar Sistem",
     "logo": "/images/partners/zanzar-sistem.png",
     "link": "https://www.zanzar.it",
-    "description": "Specializzata nella produzione di zanzariere, tende tecniche e sistemi di protezione solare, offrendo soluzioni personalizzate per ogni esigenza."
+    "description": "Specializzata nella produzione di zanzariere, tende tecniche e sistemi di protezione solare, offrendo soluzioni personalizzate per ogni esigenza.",
+    "id": "e23e5022-d5ac-4eed-9485-f8d203512f7b"
   },
   {
     "name": "Pracal",
     "logo": "/images/partners/pracal.png",
     "link": "https://www.pracal.it",
-    "description": "Azienda attiva nel settore delle tende da sole, pergole e coperture solari, focalizzata su design, qualità e innovazione per l'outdoor."
+    "description": "Azienda attiva nel settore delle tende da sole, pergole e coperture solari, focalizzata su design, qualità e innovazione per l'outdoor.",
+    "id": "235cd24d-c949-4e34-8a05-2326fa043390"
   },
   {
     "name": "Roto",
     "logo": "/images/partners/roto.png",
     "link": "https://ftt.roto-frank.com/it-it/",
-    "description": "Fornitore di ferramenta e accessori per finestre e porte, in particolare sistemi per finestre da tetto, garantendo funzionalità e sicurezza."
+    "description": "Fornitore di ferramenta e accessori per finestre e porte, in particolare sistemi per finestre da tetto, garantendo funzionalità e sicurezza.",
+    "id": "ae7e9467-0445-4d98-8060-a17bfce50e8c"
   },
   {
     "name": "RG Distribution",
     "logo": "/images/partners/rg-distribution.png",
     "link": "https://www.regdistribution.com/",
-    "description": "Distributore di prodotti per l'edilizia e i serramenti, offrendo una vasta gamma di soluzioni professionali per l'installazione e la manutenzione."
+    "description": "Distributore di prodotti per l'edilizia e i serramenti, offrendo una vasta gamma di soluzioni professionali per l'installazione e la manutenzione.",
+    "id": "cea07bea-f301-48be-b9cc-332707144d33"
   },
   {
     "name": "Tecnoplast",
     "logo": "/images/partners/tecnoplast.png",
     "link": "https://www.tecnoplastinfissi.com/",
-    "description": "Produttore di infissi e serramenti in PVC, alluminio e legno-alluminio, focalizzato sull'efficienza energetica e l'isolamento termoacustico."
+    "description": "Produttore di infissi e serramenti in PVC, alluminio e legno-alluminio, focalizzato sull'efficienza energetica e l'isolamento termoacustico.",
+    "id": "526f8f6d-6fc8-4d98-b1fc-61826780de25"
   },
   {
     "name": "Tempotest",
     "logo": "/images/partners/tempotest.png",
     "background": "bg-b",
     "link": "https://www.para.it/",
-    "description": "Brand di tessuti per tende da sole, arredamento per esterni e applicazioni nautiche, noto per la resistenza, i colori e la protezione UV."
+    "description": "Brand di tessuti per tende da sole, arredamento per esterni e applicazioni nautiche, noto per la resistenza, i colori e la protezione UV.",
+    "id": "d2d39bde-03e7-4805-8a51-95a7cac10c64"
   },
   {
     "name": "Forte",
     "logo": "/images/partners/forte.png",
     "link": "https://www.fortesrl.it",
-    "description": "Azienda che si occupa della produzione e commercializzazione di serramenti, come porte e finestre, garantendo elevati standard di sicurezza e isolamento."
+    "description": "Azienda che si occupa della produzione e commercializzazione di serramenti, come porte e finestre, garantendo elevati standard di sicurezza e isolamento.",
+    "id": "96280bb5-e67e-4cde-94f6-600d77c60282"
   },
   {
     "name": "Bressani",
     "logo": "/images/partners/bressani.png",
     "link": "https://www.bressanidesign.it",
-    "description": "Specializzata in tende da sole, pergole e sistemi di copertura per esterni, combinando funzionalità e design sofisticato."
+    "description": "Specializzata in tende da sole, pergole e sistemi di copertura per esterni, combinando funzionalità e design sofisticato.",
+    "id": "d783bcb1-bfde-40b3-8533-8036ca28f643"
   },
   {
     "name": "Cento",
     "logo": "/images/partners/cento.png",
     "link": "https://www.centotendetecniche.com/",
-    "description": "Produttore di tende tecniche per interni ed esterni, come veneziane, rulli e plissé, utili per la gestione della luce e del calore."
+    "description": "Produttore di tende tecniche per interni ed esterni, come veneziane, rulli e plissé, utili per la gestione della luce e del calore.",
+    "id": "b96bcfcc-38bd-4ff6-9813-76d498b24430"
   },
   {
     "name": "Effetrade",
     "logo": "/images/partners/effetrade.svg",
     "background": "bg-b",
     "link": "https://www.effetrade.it",
-    "description": "Azienda fornitrice di materiali e accessori per serramenti e porte blindate, operando nel settore della componentistica."
+    "description": "Azienda fornitrice di materiali e accessori per serramenti e porte blindate, operando nel settore della componentistica.",
+    "id": "a265741b-5c7d-4670-bb2d-5625e873f80d"
   },
   {
     "name": "Sliding Crystal",
     "logo": "/images/partners/sliding-crystal.png",
     "background": "bg-b",
     "link": "https://www.slidingcrystal.com",
-    "description": "Specializzata in vetrate panoramiche scorrevoli e sistemi di chiusura in vetro, ideali per balconi, terrazzi e spazi esterni."
+    "description": "Specializzata in vetrate panoramiche scorrevoli e sistemi di chiusura in vetro, ideali per balconi, terrazzi e spazi esterni.",
+    "id": "573ffe00-0166-43f3-a17a-ca63d6a4f8ae"
   }
 ]

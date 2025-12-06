@@ -1,5 +1,17 @@
 [
-  { "href": "/link1", "label": "Link1" },
-  { "href": "/link2", "label": "Link2" },
-  { "href": "/link3", "label": "Link3" }
+  {
+    "href": "/link1",
+    "label": "Link1",
+    "id": "0db085e4-fce5-418c-a177-f66f80adc352"
+  },
+  {
+    "href": "/link2",
+    "label": "Link2",
+    "id": "986618d5-4a54-4036-a76c-31f0bedfef2b"
+  },
+  {
+    "href": "/link3",
+    "label": "Link3",
+    "id": "2ef6dc52-69ac-48ce-a553-51a0495f1951"
+  }
 ]

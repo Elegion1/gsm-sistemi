@@ -16,7 +16,7 @@ export default function HeroHome() {
         <div className="hero">
           <Image
             src="/images/image.png"
-            alt="Hero Image"
+            alt="gsm-sistemi"
             width={2500}
             height={1801}
             style={{ width: "100%", height: "auto" }}

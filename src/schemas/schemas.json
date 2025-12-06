@@ -1,0 +1,107 @@
+{
+  "jobs": {
+    "file": "jobs.json",
+    "primaryKey": "id",
+    "fields": {
+      "title": { "type": "string", "required": true },
+      "description": { "type": "string", "required": true },
+      "date": { "type": "string", "required": true },
+
+      "images": {
+        "type": "array",
+        "optional": true,
+        "items": {
+          "path": { "type": "string", "required": true },
+          "description": { "type": "string", "required": false }
+        }
+      },
+
+      "image": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  },
+
+  "links": {
+    "file": "links.json",
+    "primaryKey": "id",
+    "fields": {
+      "href": { "type": "string", "required": true },
+      "label": { "type": "string", "required": true }
+    }
+  },
+
+  "owner": {
+    "file": "owner.json",
+    "primaryKey": null,
+    "type": "object",
+    "fields": {
+      "companyName": { "type": "string", "required": true },
+      "legalName": { "type": "string", "required": true },
+      "ownerName": { "type": "string", "required": true },
+      "phone": { "type": "string", "required": true },
+      "landline": { "type": "string", "required": false },
+      "email": { "type": "string", "required": true },
+      "pec": { "type": "string", "required": false },
+
+      "address": {
+        "type": "object",
+        "fields": {
+          "street": { "type": "string", "required": true },
+          "streetNumber": { "type": "string", "required": true },
+          "city": { "type": "string", "required": true },
+          "locality": { "type": "string", "required": true },
+          "province": { "type": "string", "required": true },
+          "region": { "type": "string", "required": true },
+          "country": { "type": "string", "required": true },
+          "zip": { "type": "string", "required": true }
+        }
+      },
+
+      "vatNumber": { "type": "string", "required": true },
+      "sdiCode": { "type": "string", "required": false },
+      "codFisc": { "type": "string", "required": false },
+      "foundationYear": { "type": "string", "required": true },
+      "businessType": { "type": "string", "required": true },
+
+      "seoDescription": { "type": "string", "required": true },
+      "seoKeywords": {
+        "type": "array",
+        "items": {
+          "value": { "type": "string", "required": true }
+        }
+      }
+    }
+  },
+
+  "partners": {
+    "file": "partners.json",
+    "primaryKey": "id",
+    "fields": {
+      "name": { "type": "string", "required": true },
+      "logo": { "type": "string", "required": true },
+      "link": { "type": "string", "required": false },
+      "description": { "type": "string", "required": false }
+    }
+  },
+
+  "products": {
+    "file": "products.json",
+    "primaryKey": "id",
+    "fields": {
+      "name": { "type": "string", "required": true },
+      "image": { "type": "string", "required": true },
+      "link": { "type": "string", "required": true }
+    }
+  },
+
+  "services": {
+    "file": "services.json",
+    "primaryKey": "id",
+    "fields": {
+      "name": { "type": "string", "required": true },
+      "description": { "type": "string", "required": true }
+    }
+  }
+}

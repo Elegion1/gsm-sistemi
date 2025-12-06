@@ -1,9 +1,9 @@
-"use client";
-
 import Button from "./Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductCard({ product }) {
+  console.log(product.slug);
   return (
     <div className="product-card bg-d p-3 gap-3">
       <Image
@@ -11,18 +11,16 @@ export default function ProductCard({ product }) {
         alt={product.name}
         width={240}
         height={220}
-        unoptimized
         loading="lazy"
-        className="w-100 bg-c"
+        className="bg-c"
       />
       <p style={{ height: "44px" }} className="text-center my-2">
         {product.name}
       </p>
-      <Button
-        className="w-100 bg-c text-light"
-        label="Acquista"
-        onClick={() => (window.location.href = product.link)}
-      />
+
+      <Link href={`/prodotti/${product.slug}`}>
+        <Button className="w-100 bg-c text-light" label="Scopri di più" />
+      </Link>
     </div>
   );
 }

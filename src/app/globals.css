@@ -23,37 +23,28 @@ p {
 }
 
 .text-shadow {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1 6px rgba(0, 0, 0, 0.7);
 }
 
 .navbar {
   background-color: var(--col-b);
   opacity: 1;
   height: 19.22dvh;
-  max-height: 200px;
+  max-height: 250px;
+  min-height: 100px;
+  transition: all 0.3s ease;
 }
 
-.navbar-large {
-  flex-direction: column;
-  justify-content: center;
-  transition: all 2s ease;
-}
-
-.navbar-large .navbar-logo {
-  transform: scale(1);
+@media (max-width: 768px) {
+  .navbar {
+    height: 15dvh;
+  }
 }
 
 .navbar-shrink {
-  transition: all 2s ease;
-  flex-direction: row;
-  justify-content: space-between;
   opacity: 0.9;
-  backdrop-filter: blur(6px);
-  height: 8dvh;
-}
-
-.navbar-shrink .navbar-logo {
-  transform: scale(0.75);
+  backdrop-filter: blur(10px);
+  height: 10dvh;
 }
 
 .hero {
@@ -62,7 +53,19 @@ p {
 
 .hero-text {
   position: absolute;
-  bottom: 40%;
+  top: 65%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--col-d);
+  z-index: 1;
+  transition: 0.3s ease;
+}
+
+.hero-text-dynamic {
+  position: absolute;
+  bottom: 55%;
   width: 100%;
   text-align: center;
   color: var(--col-d);
@@ -76,6 +79,15 @@ p {
   width: 100%;
   height: 15dvh;
   z-index: 2;
+}
+
+.hero-bottom-mobile {
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  width: 100%;
+  filter: brightness(0.85);
 }
 
 [class*="-card"] {
@@ -104,4 +116,73 @@ p {
 
 .partner:hover .partner-overlay {
   opacity: 1;
+}
+
+.review-card {
+  width: 300px;
+}
+
+.fade-slide {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Default: non fa nulla su xs e sm */
+.w-md-25 {
+  width: 100%; /* fallback per mobile */
+}
+
+.w-md-50 {
+  width: 100%;
+}
+
+.w-md-75 {
+  width: 100%;
+}
+
+.w-md-100 {
+  width: 100%;
+}
+
+/* Solo da md in su */
+@media (min-width: 768px) {
+  .w-md-25 {
+    width: 25% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-100 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-lg-25 {
+    width: 25% !important;
+  }
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  .w-lg-100 {
+    width: 100% !important;
+  }
 }
