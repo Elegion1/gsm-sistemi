@@ -8,7 +8,7 @@ export default function HeroBottom({ items }) {
 
   useEffect(() => {
     const checkSize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 992);
     };
 
     checkSize();
@@ -33,7 +33,7 @@ export default function HeroBottom({ items }) {
       className={`hero-bottom bg-d d-flex justify-content-center align-items-center gap-5 py-5 px-2 ${
         isMobile ? "flex-column" : ""
       }`}
-      style={{ position: "relative", overflow: "hidden" }}
+      style={{ overflow: "hidden" }}
     >
       {isMobile ? (
         <h3

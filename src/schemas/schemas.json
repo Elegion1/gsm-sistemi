@@ -82,8 +82,10 @@
       "name": { "type": "string", "required": true },
       "logo": { "type": "string", "required": true },
       "link": { "type": "string", "required": false },
-      "description": { "type": "string", "required": false }
-    }
+      "description": { "type": "string", "required": false },
+      "slug": { "type": "string", "required": false }
+    },
+    "slugField": "slug"
   },
 
   "products": {
@@ -92,8 +94,10 @@
     "fields": {
       "name": { "type": "string", "required": true },
       "image": { "type": "string", "required": true },
-      "link": { "type": "string", "required": true }
-    }
+      "link": { "type": "string", "required": true },
+      "slug": { "type": "string", "required": false }
+    },
+    "slugField": "slug"
   },
 
   "services": {
@@ -101,7 +105,9 @@
     "primaryKey": "id",
     "fields": {
       "name": { "type": "string", "required": true },
-      "description": { "type": "string", "required": true }
-    }
+      "description": { "type": "string", "required": true },
+      "slug": { "type": "string", "required": false }
+    },
+    "slugField": "slug"
   }
 }

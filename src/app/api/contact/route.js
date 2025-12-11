@@ -16,7 +16,7 @@ export async function POST(req) {
   // Email che ricevi tu
   const mailToOwner = {
     from: process.env.SMTP_USER,
-    to: process.env.SMTP_USER,
+    to: process.env.USER_EMAIL,
     replyTo: email,
     subject: `Nuovo messaggio dal sito GSM Sistemi`,
     text: `

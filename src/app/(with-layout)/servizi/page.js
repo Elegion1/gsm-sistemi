@@ -18,8 +18,10 @@ export default function ServiziPage() {
           "Offriamo servizi progettati per migliorare comfort, funzionalità ed efficienza degli spazi. Dalla consulenza all’installazione, ti accompagniamo in ogni fase con competenza e attenzione al dettaglio"
         }
         image={"/images/services.png"}
-        imagePosition={"center"}
-        imageHeight="80vh"
+        imagePositionDesktop="center"
+        imageHeightDesktop="80vh"
+        imagePositionMobile="center"
+        imageHeightMobile="60vh"
       />
       <PageLayout>
         <section>

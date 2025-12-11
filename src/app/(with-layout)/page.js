@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import PageLayout from "@/app/components/PageLayout";
-import Hero from "@/app/components/HeroHome";
+import HeroHome from "@/app/components/HeroHome";
 import ProductCard from "@/app/components/ProductCard";
 import ContactCTA from "@/app/components/ContactCTA";
 import owner from "@/data/owner.json";
@@ -34,7 +34,7 @@ const cta = [
 export default function Home() {
   return (
     <>
-      <Hero />
+      <HeroHome />
       <main>
         <PageLayout>
           <section id="chi-siamo">

@@ -45,7 +45,7 @@ export default function HeroTextDynamic() {
       ? -6 // ad esempio: testo un po' più alto sul mobile
       : breakpoint === "tablet"
       ? 10 // posizione intermedia sul tablet
-      : 30; // desktop parte "normale"
+      : 15; // desktop parte "normale"
 
   const translateY = baseOffset + dynamicTranslate;
 

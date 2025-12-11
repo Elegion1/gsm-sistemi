@@ -1,4 +1,5 @@
 @import "./layout.css";
+@import "./customStyles.css";
 
 html,
 body {
@@ -139,50 +140,21 @@ p {
   }
 }
 
-/* Default: non fa nulla su xs e sm */
-.w-md-25 {
-  width: 100%; /* fallback per mobile */
+/* Mobile default */
+.nav-link-size {
+  font-size: 0.75rem; /* ~12px */
 }
 
-.w-md-50 {
-  width: 100%;
-}
-
-.w-md-75 {
-  width: 100%;
-}
-
-.w-md-100 {
-  width: 100%;
-}
-
-/* Solo da md in su */
-@media (min-width: 768px) {
-  .w-md-25 {
-    width: 25% !important;
-  }
-  .w-md-50 {
-    width: 50% !important;
-  }
-  .w-md-75 {
-    width: 75% !important;
-  }
-  .w-md-100 {
-    width: 100% !important;
+/* Tablet */
+@media (min-width: 576px) {
+  .nav-link-size {
+    font-size: 0.9rem;
   }
 }
 
+/* Desktop */
 @media (min-width: 992px) {
-  .w-lg-25 {
-    width: 25% !important;
-  }
-  .w-lg-50 {
-    width: 50% !important;
-  }
-  .w-lg-75 {
-    width: 75% !important;
-  }
-  .w-lg-100 {
-    width: 100% !important;
+  .nav-link-size {
+    font-size: 1rem;
   }
 }

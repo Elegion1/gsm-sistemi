@@ -17,20 +17,21 @@ export default function ProdottiPage() {
         title={"I nostri prodotti"}
         description={`Esplora la vasta gamma di prodotti offerti da ${owner.companyName}, tra cui infissi, serramenti, porte e zanzariere di alta qualità per ogni esigenza abitativa a ${owner.address.city}.`}
         image="/images/products.png"
-        imagePosition={"top"}
-        imageHeight="70vh"
+        imagePositionDesktop={"top"}
+        imageHeightDesktop="70vh"
+        imageHeightMobile="50vh"
       />
       <PageLayout>
         <section>
           <h2 className="text-uppercase fw-medium text-center">
             i nostri prodotti
           </h2>
-          <p className="text-center fs-4 w-md-50 mx-auto">
+          <p className="text-center fs-4 mx-auto">
             Ogni nostro prodotto è progettato per garantire sicurezza, durata e
             design moderno. Scopri la qualità dei materiali e l’attenzione al
             dettaglio in ogni soluzione
           </p>
-          <div className="row g-4 mt-4 w-md-75 mx-auto">
+          <div className="row g-4 mt-4 mx-auto">
             {products.map((product, index) => (
               <div
                 key={index}

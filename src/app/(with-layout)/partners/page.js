@@ -34,8 +34,10 @@ export default function PartnersPage() {
         title={"I nostri partners"}
         description={`Scopri i nostri partners e le collaborazioni di ${owner.companyName} nel settore degli infissi, serramenti, porte e zanzariere a ${owner.address.city}.`}
         image="/images/hero.png"
-        imagePosition={"center"}
-        imageHeight="70vh"
+        imagePositionDesktop="center"
+        imageHeightDesktop="70vh"
+        imageHeightMobile="50vh"
+        imagePositionMobile="top"
       />
       <PageLayout>
         <section className="d-flex justify-content-center align-items-center gap-md-5 gap-3 flex-wrap">
@@ -53,7 +55,7 @@ export default function PartnersPage() {
             soluzioni di qualità, garantendo installazioni sicure, prodotti
             certificati e assistenza costante.
           </h3>
-          <div className="d-flex flex-wrap justify-content-around align-items-center gap-md-5 gap-1 mt-4 w-md-75 mx-auto">
+          <div className="d-flex flex-wrap justify-content-around align-items-center gap-md-5 gap-1 mt-4 mx-auto">
             {partners.map((partner, index) => (
               <Link
                 key={index}
@@ -112,7 +114,7 @@ export default function PartnersPage() {
             le opportunità di partnership.
           </h3>
           <div className="w-100 d-flex justify-content-center align-items-center mt-3">
-            <Link href="/contattaci" className="text-decoration-none">
+            <Link href="/contatti" className="text-decoration-none">
               <Button label="Contattaci" className="bg-a text-d" />
             </Link>
           </div>
