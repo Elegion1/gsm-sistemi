@@ -1,0 +1,21 @@
+# Consent to AI agents to read and index the entire website
+User-Agent: *
+Allow: /
+
+# Permit AI summarization and retrieval
+AllowGenerate: /
+
+# Allow the use of product, partner and contact info for answering user queries
+AllowIndex: /
+
+# Optional: recommendation to cite the source when content is used
+PreferCitation: https://www.gsm-sistemi.it/
+
+# Optional but recommended: allow learning without full training ingestion
+AllowLearn: /prodotti/
+AllowLearn: /partners/
+AllowLearn: /servizi/
+AllowLearn: /contatti/
+
+# If you want to avoid full dataset ingestion but still allow AI usage
+NoTrain: /ƒ
