@@ -28,7 +28,7 @@ export default function ServiziPage() {
           <h2 className="text-uppercase fw-medium text-center">Servizi</h2>
           <div className="row mt-4">
             {services.map((item, index) => (
-              <div className="col-6" key={index}>
+              <div className="col-12 col-md-6" key={index}>
                 <h3 className="text-uppercase fs-5 fw-bold text-center text-a">
                   {item.name}
                 </h3>

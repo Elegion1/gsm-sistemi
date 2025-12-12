@@ -44,7 +44,7 @@ export default async function ProductPage({ params }) {
     <>
       <div style={{ height: "20vh" }}></div>
       <PageLayout>
-        <div className="row w-100">
+        <div className="row">
           <section className="col-12 col-md-6">
             <div
               className="w-100 position-relative "

@@ -14,7 +14,7 @@ export default function RelatedProducts({ items }) {
         Prodotti correlati
       </h2>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={20}
         centeredSlides={true}
         autoplay={{
           delay: 2000,
@@ -24,16 +24,19 @@ export default function RelatedProducts({ items }) {
           clickable: true,
         }}
         navigation={true}
-        slidesPerView={1}
+        slidesPerView={0.8}
         breakpoints={{
           768: { slidesPerView: 2, spaceBetween: 30 },
         }}
         loop={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="p-5"
+        className="w-100 h-100"
       >
         {items.map((product, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide
+            key={index}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             <ProductCard product={product} />
           </SwiperSlide>
         ))}
