@@ -6,6 +6,7 @@ import Head from "next/head";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import SeoData from "@/app/components/SeoData";
+import CookieConsentBanner from "@/app/components/CookieConsentBanner";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body>
         <SeoData />
-
+        <CookieConsentBanner />
         <Navbar />
         {children}
         <Footer />
