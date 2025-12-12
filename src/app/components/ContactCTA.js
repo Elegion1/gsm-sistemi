@@ -10,7 +10,7 @@ export default function ContactCTA() {
         Parla con un tecnico
       </h3>
       <div className="w-100 d-flex justify-content-center align-items-center mt-4">
-        <Link href="/contatti" className="btn bg-c text-d">
+        <Link aria-label="Vai alla pagina contatti" href="/contatti" className="btn bg-c text-d">
           Contattaci
         </Link>
       </div>

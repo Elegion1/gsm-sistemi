@@ -67,7 +67,7 @@ export default function Home() {
               ))}
             </div>
             <div className="w-100 d-flex justify-content-center align-items-center mt-3">
-              <Link href="/prodotti">
+              <Link aria-label="Vai alla pagina prodotti" href="/prodotti">
                 <Button
                   className="bg-a text-light"
                   label="Vedi tutti i prodotti"

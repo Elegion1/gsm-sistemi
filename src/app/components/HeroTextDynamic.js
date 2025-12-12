@@ -80,7 +80,7 @@ export default function HeroTextDynamic() {
         <p className={`text-shadow m-2 ${subtitleSize}`}>
           Richiedi un preventivo
         </p>
-        <Link href="/contatti" className="btn bg-a text-d">
+        <Link aria-label="Vai alla pagina contatti" href="/contatti" className="btn bg-a text-d">
           Contattaci
         </Link>
       </div>

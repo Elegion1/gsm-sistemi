@@ -58,6 +58,7 @@ export default function PartnersPage() {
           <div className="d-flex flex-wrap justify-content-around align-items-center gap-md-5 gap-1 mt-4 mx-auto">
             {partners.map((partner, index) => (
               <Link
+              aria-label="Vai al sito del partner"
                 key={index}
                 target="_blank"
                 href={partner.link}
@@ -114,7 +115,7 @@ export default function PartnersPage() {
             le opportunità di partnership.
           </h3>
           <div className="w-100 d-flex justify-content-center align-items-center mt-3">
-            <Link href="/contatti" className="text-decoration-none">
+            <Link aria-label="Vai alla pagina contatti" href="/contatti" className="text-decoration-none">
               <Button label="Contattaci" className="bg-a text-d" />
             </Link>
           </div>

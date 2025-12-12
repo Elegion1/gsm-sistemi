@@ -27,6 +27,7 @@ export default function Social({ item }) {
 
         return (
           <Link
+            aria-label={`Vai alla pagina ${key}`}
             key={key}
             href={href}
             target="_blank"

@@ -44,7 +44,7 @@ export default function Navbar() {
         shrink ? "navbar-shrink" : ""
       }`}
     >
-      <Link href="/">
+      <Link aria-label="Vai alla home" href="/">
         <Image
           src="/images/logo_long.svg"
           alt="logo-gsm-sistemi"
@@ -59,6 +59,7 @@ export default function Navbar() {
           {navItems.map((item) => (
             <li key={item.name}>
               <Link
+                aria-label={`Vai alla pagina ${item.name}`}
                 href={item.link}
                 className="text-uppercase text-reset text-decoration-none fw-semibold text-c nav-link-size"
               >

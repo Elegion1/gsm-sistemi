@@ -17,7 +17,7 @@ export default function ProductCard({ product }) {
         {product.name}
       </p>
 
-      <Link href={`/prodotti/${product.slug}`}>
+      <Link aria-label={`Vai ai dettagli per ${product.name}`} href={`/prodotti/${product.slug}`}>
         <Button className="w-100 bg-c text-light" label="Scopri di più" />
       </Link>
     </div>

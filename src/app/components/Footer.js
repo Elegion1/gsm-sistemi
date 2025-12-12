@@ -25,6 +25,7 @@ export default function Footer() {
 
           {links.map((link, index) => (
             <Link
+              aria-label={`Vai alla pagina ${link.label}`}
               key={index}
               className="text-d text-reset text-decoration-none text-uppercase"
               href={link.href}
@@ -33,6 +34,7 @@ export default function Footer() {
             </Link>
           ))}
           <Link
+            aria-label="Vai alla sitemap"
             href={"/sitemap.xml"}
             className="text-d text-reset text-decoration-none text-uppercase"
           >
