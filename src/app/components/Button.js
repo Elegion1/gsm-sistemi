@@ -4,7 +4,7 @@ export default function Button({ label, onClick, className, style }) {
   return (
     <>
       <button
-        className={`btn ${className}`}
+        className={`btn btn-card ${className}`}
         onClick={onClick}
         style={style}
       >

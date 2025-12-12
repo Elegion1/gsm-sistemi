@@ -43,7 +43,7 @@ export default function ContactForm() {
 
   return (
     <div
-      className={`position-relative p-md-5 bg-d p-2 ${
+      className={`position-relative p-md-5 bg-d p-2 contact-card ${
         status === "loading" ? "loading-overlay" : ""
       }`}
     >

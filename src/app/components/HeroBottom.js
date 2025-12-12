@@ -36,25 +36,25 @@ export default function HeroBottom({ items }) {
       style={{ overflow: "hidden" }}
     >
       {isMobile ? (
-        <h3
+        <p
           key={currentIndex}
-          className="text-a text-uppercase text-center fw-bold m-0 fade-slide"
+          className="h3 text-a text-uppercase text-center fw-bold m-0 fade-slide"
           style={{
             width: "100%",
             transition: "opacity 0.6s, transform 0.6s",
           }}
         >
           {items[currentIndex]}
-        </h3>
+        </p>
       ) : (
         items.map((text, index) => (
-          <h3
+          <p
             style={{ width: "250px" }}
             key={index}
-            className="text-a text-uppercase text-center fw-bold m-0"
+            className="h3 text-a text-uppercase text-center fw-bold m-0"
           >
             {text}
-          </h3>
+          </p>
         ))
       )}
     </div>
