@@ -6,16 +6,15 @@ import { useState, useEffect } from "react";
 export default function HeroTextDynamic() {
   const [scroll, setScroll] = useState(0);
   const [breakpoint, setBreakpoint] = useState("desktop"); // mobile | tablet | desktop
+  const [navbarHeight, setNavbarHeight] = useState(0);
 
   useEffect(() => {
     const checkSize = () => {
       const w = window.innerWidth;
-
       if (w < 576) setBreakpoint("mobile");
       else if (w < 992) setBreakpoint("tablet");
       else setBreakpoint("desktop");
     };
-
     checkSize();
     window.addEventListener("resize", checkSize);
 
@@ -23,11 +22,14 @@ export default function HeroTextDynamic() {
       if (breakpoint === "desktop") {
         setScroll(window.scrollY);
       } else {
-        setScroll(0); // niente scroll su mobile/tablet
+        setScroll(0);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
+
+    // altezza navbar
+    const navbar = document.querySelector(".navbar");
+    if (navbar) setNavbarHeight(navbar.offsetHeight);
 
     return () => {
       window.removeEventListener("resize", checkSize);
@@ -35,28 +37,49 @@ export default function HeroTextDynamic() {
     };
   }, [breakpoint]);
 
-  // movimento dinamico
-  const dynamicTranslate =
-    breakpoint === "desktop" ? Math.min(scroll / 10, 50) : 0;
-
-  // offset iniziali diversi
-  const baseOffset =
+  // dimensioni del testo in base al breakpoint
+  const titleSize =
     breakpoint === "mobile"
-      ? -6 // ad esempio: testo un po' più alto sul mobile
+      ? "fs-4"
       : breakpoint === "tablet"
-      ? 10 // posizione intermedia sul tablet
-      : 15; // desktop parte "normale"
+      ? "fs-2"
+      : "fs-1";
 
-  const translateY = baseOffset + dynamicTranslate;
+  const subtitleSize =
+    breakpoint === "mobile"
+      ? "fs-6"
+      : breakpoint === "tablet"
+      ? "fs-5"
+      : "fs-4";
+
+  // comportamento differenziato
+  let translateY;
+  if (breakpoint === "desktop") {
+    const baseOffset = 40; // offset originale desktop
+    const dynamicTranslate = Math.min(scroll / 10, 50);
+    translateY = baseOffset + dynamicTranslate;
+  } else {
+    // mobile/tablet: subito sotto la navbar
+    translateY = (navbarHeight / window.innerHeight) * 100 + 5;
+  }
 
   return (
     <div
-      className="hero-text-dynamic m-0"
-      style={{ transform: `translateY(${translateY}vh)` }}
+      className="hero-text-dynamic m-0 text-center"
+      style={{
+        transform: `translateY(${translateY}vh)`,
+        top: 0,
+        position: "absolute",
+        width: "100%",
+      }}
     >
-      <h1 className="fw-bold text-shadow">Efficienza, sicurezza, eleganza</h1>
+      <h1 className={`fw-bold text-shadow ${titleSize}`}>
+        Efficienza, sicurezza, eleganza
+      </h1>
       <div className="d-flex justify-content-center align-items-center flex-column">
-        <p className="text-shadow m-2">Richiedi un preventivo</p>
+        <p className={`text-shadow m-2 ${subtitleSize}`}>
+          Richiedi un preventivo
+        </p>
         <Link href="/contatti" className="btn bg-a text-d">
           Contattaci
         </Link>
