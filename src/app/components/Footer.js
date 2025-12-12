@@ -49,11 +49,11 @@ export default function Footer() {
             {owner.address.province}
           </p>
           <p className="m-0 text-uppercase">p.iva: {owner.vatNumber}</p>
-          <p className="m-0 text-uppercase">sdi: {owner.sdiCode}</p>
+          {/* <p className="m-0 text-uppercase">sdi: {owner.sdiCode}</p> */}
           <p className="m-0 text-uppercase">tel: {owner.phone}</p>
-          <p className="m-0 text-uppercase">
+          {/* <p className="m-0 text-uppercase">
             pec: <span className="text-lowercase">{owner.pec}</span>
-          </p>
+          </p> */}
           <p className="m-0 text-uppercase">
             email: <span className="text-lowercase">{owner.email}</span>
           </p>
