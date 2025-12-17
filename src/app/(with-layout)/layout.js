@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={montserrat.variable}>
+    <html lang="it" className={montserrat.variable} data-scroll-behavior="smooth">
       <Head>
         <meta name="apple-mobile-web-app-title" content="GSM Sistemi" />
       </Head>
