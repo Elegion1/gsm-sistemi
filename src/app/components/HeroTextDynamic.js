@@ -73,14 +73,19 @@ export default function HeroTextDynamic() {
         width: "100%",
       }}
     >
-      <h1 className={`fw-bold text-shadow ${titleSize}`}>
-        Efficienza, sicurezza, eleganza
+      <h1 className={`h1 fw-bold text-shadow ${titleSize}`}>
+        Infissi a Trapani su misura – Fornitura e installazione
       </h1>
+
       <div className="d-flex justify-content-center align-items-center flex-column">
         <p className={`text-shadow m-2 ${subtitleSize}`}>
           Richiedi un preventivo
         </p>
-        <Link aria-label="Vai alla pagina contatti" href="/contatti" className="btn bg-a text-d">
+        <Link
+          aria-label="Vai alla pagina contatti"
+          href="/contatti"
+          className="btn bg-a text-d"
+        >
           Contattaci
         </Link>
       </div>
