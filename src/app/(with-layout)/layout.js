@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import BootstrapClient from "@/app/components/BootstrapClient";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Montserrat } from "next/font/google";
 import "@/app/globals.css";
 import Head from "next/head";
@@ -18,6 +19,7 @@ const montserrat = Montserrat({
 export default function RootLayout({ children }) {
   return (
     <html lang="it" className={montserrat.variable} data-scroll-behavior="smooth">
+      <GoogleTagManager gtmId="GTM-K7QSNQTH" />
       <Head>
         <meta name="apple-mobile-web-app-title" content="GSM Sistemi" />
       </Head>
