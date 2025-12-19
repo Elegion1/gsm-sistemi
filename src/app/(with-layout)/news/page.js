@@ -13,6 +13,9 @@ export const metadata = {
     "Rimani aggiornato con le ultime notizie e consigli su infissi, serramenti e zanzariere a Trapani. Scopri le novità del settore e le migliori soluzioni per la tua casa.",
   keywords:
     "news infissi Trapani, blog serramenti Trapani, aggiornamenti zanzariere Trapani, consigli infissi, novità serramenti, guide zanzariere",
+  alternates: {
+    canonical: "/news",
+  },
 };
 
 export default function NewsPage() {

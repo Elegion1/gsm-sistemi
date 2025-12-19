@@ -16,6 +16,8 @@ const montserrat = Montserrat({
   style: ["normal"],
 });
 
+export const metadata = { metadataBase: new URL("https://www.gsm-sistemi.it") };
+
 export default function RootLayout({ children }) {
   return (
     <html

@@ -7,6 +7,9 @@ export const metadata = {
   title: "Servizi | Soluzioni su Misura per Ogni Esigenza",
   description:
     "Scopri tutti i nostri servizi dedicati al miglioramento del comfort, della funzionalità e dell’efficienza degli spazi. Dalla consulenza all’installazione, offriamo soluzioni professionali, personalizzate e curate in ogni dettaglio.",
+    alternates: {
+    canonical: "/servizi",
+  },
 };
 
 export default function ServiziPage() {

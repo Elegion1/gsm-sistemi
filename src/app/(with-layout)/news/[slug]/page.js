@@ -20,6 +20,9 @@ export async function generateMetadata({ params }) {
   return {
     title: `${article.title} | Blog | ${owner.companyName}`,
     description: `${article.excerpt}`,
+    alternates: {
+      canonical: `/news/${slug}`,
+    },
   };
 }
 

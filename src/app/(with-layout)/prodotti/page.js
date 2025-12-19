@@ -8,6 +8,9 @@ import products from "@/data/products.json";
 export const metadata = {
   title: `Prodotti | Soluzioni di ${owner.companyName}`,
   description: `Esplora la vasta gamma di prodotti offerti da ${owner.companyName}, tra cui infissi, serramenti, porte e zanzariere di alta qualità per ogni esigenza abitativa a ${owner.address.city}.`,
+  alternates: {
+    canonical: "/prodotti",
+  },
 };
 
 export default function ProdottiPage() {

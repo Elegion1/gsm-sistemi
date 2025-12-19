@@ -20,6 +20,9 @@ export const metadata = {
   title: `${owner.companyName} | Infissi, Serramenti, Porte e Zanzariere a ${owner.address.city}`,
   description: owner.seoDescription,
   keywords: owner.seoKeywords,
+  alternates: {
+    canonical: "/",
+  },
 };
 
 const cta = [

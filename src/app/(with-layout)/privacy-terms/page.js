@@ -3,8 +3,10 @@ import owner from "@/data/owner.json";
 
 export const metadata = {
   title: `Privacy Policy | ${owner.companyName}`,
-  description:
-    `Informativa completa sul trattamento dei dati personali da parte di ${owner.companyName}. Scopri come gestiamo sicurezza, contatti, richieste dal sito e tutela della privacy`,
+  description: `Informativa completa sul trattamento dei dati personali da parte di ${owner.companyName}. Scopri come gestiamo sicurezza, contatti, richieste dal sito e tutela della privacy`,
+  alternates: {
+    canonical: "/privacy-terms",
+  },
 };
 
 export default function PrivacyPage() {

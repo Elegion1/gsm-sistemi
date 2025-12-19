@@ -25,6 +25,9 @@ export async function generateMetadata({ params }) {
     description: `Marchi: ${brands.map((brand) => brand.name).join(", ")} | ${
       product.description
     }`,
+    alternates: {
+      canonical: `/prodotti/${slug}`,
+    },
   };
 }
 
