@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import BootstrapClient from "@/app/components/BootstrapClient";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { Montserrat } from "next/font/google";
 import "@/app/globals.css";
 import Head from "next/head";
