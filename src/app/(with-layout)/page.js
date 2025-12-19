@@ -38,7 +38,7 @@ export default function Home() {
       <main>
         <PageLayout>
           <section id="chi-siamo">
-            <h2 className="text-uppercase fw-medium text-center">Chi siamo</h2>
+            <h3 className="text-uppercase fw-medium text-center">Chi siamo</h3>
             <p className="text-center mt-4 fs-4 fw-normal">
               <span className="fw-bold">{owner.legalName},</span> con sede in{" "}
               <span className="fw-bold">
@@ -58,9 +58,14 @@ export default function Home() {
               precise e durevoli, affiancando privati e aziende con
               professionalità e trasparenza.
             </p>
+            <div className="w-100 d-flex justify-content-center align-items-center mt-3">
+              <Link href={"/news"} className="btn bg-a text-d">
+                Vai alle news
+              </Link>
+            </div>
           </section>
           <section id="prodotti">
-            <h2 className="text-uppercase fw-medium text-center">Prodotti</h2>
+            <h3 className="text-uppercase fw-medium text-center">Prodotti</h3>
             <div className="d-flex flex-wrap justify-content-center align-items-center gap-4 mt-4">
               {products.map((product) => (
                 <ProductCard key={product.slug} product={product} />
@@ -77,9 +82,9 @@ export default function Home() {
           </section>
 
           <section id="perche-sceglierci">
-            <h2 className="text-uppercase fw-medium text-center">
+            <h3 className="text-uppercase fw-medium text-center">
               Perché sceglierci
-            </h2>
+            </h3>
             <div className="d-flex flex-wrap justify-content-center align-items-center gap-5 mt-4">
               {cta.map((item, index) => (
                 <InfoCard key={index} title={item} />
@@ -88,7 +93,7 @@ export default function Home() {
           </section>
 
           <section id="partners">
-            <h2 className="text-uppercase fw-medium text-center">Partners</h2>
+            <h3 className="text-uppercase fw-medium text-center">Partners</h3>
             <div className="d-flex flex-wrap justify-content-center align-items-center gap-2 gap-md-5 mt-4">
               {partners.map((partner, index) => (
                 <div
@@ -116,9 +121,9 @@ export default function Home() {
 
           {jobs.length > 0 && (
             <section id="realizzazioni">
-              <h2 className="text-uppercase fw-medium text-center">
+              <h3 className="text-uppercase fw-medium text-center">
                 Realizzazioni
-              </h2>
+              </h3>
               <div className="d-flex justify-content-center align-items-center mt-4 gap-5 flex-wrap">
                 {jobs.map((job, index) => (
                   <div
@@ -154,7 +159,7 @@ export default function Home() {
 
           {reviews.length > 0 && (
             <section id="clienti">
-              <h2 className="text-uppercase fw-medium text-center">Clienti</h2>
+              <h3 className="text-uppercase fw-medium text-center">Clienti</h3>
               <div className="d-flex justify-content-center align-items-center mt-4 gap-5 flex-wrap">
                 {reviews.map((item, index) => (
                   <ReviewCard key={index} review={item} />

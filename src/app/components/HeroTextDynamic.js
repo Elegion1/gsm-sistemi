@@ -60,7 +60,7 @@ export default function HeroTextDynamic() {
     translateY = baseOffset + dynamicTranslate;
   } else {
     // mobile/tablet: subito sotto la navbar
-    translateY = (navbarHeight / window.innerHeight) * 100 + 5;
+    translateY = (navbarHeight / window.innerHeight) * 70;
   }
 
   return (
@@ -76,17 +76,16 @@ export default function HeroTextDynamic() {
       <h1 className={`h1 fw-bold text-shadow ${titleSize}`}>
         Infissi a Trapani su misura – Fornitura e installazione
       </h1>
-
+      <h2 className={`text-shadow ${subtitleSize}`}>
+        Soluzioni in alluminio, PVC e legno-alluminio per case e attività
+      </h2>
       <div className="d-flex justify-content-center align-items-center flex-column">
-        <p className={`text-shadow m-2 ${subtitleSize}`}>
-          Richiedi un preventivo
-        </p>
         <Link
           aria-label="Vai alla pagina contatti"
           href="/contatti"
           className="btn bg-a text-d"
         >
-          Contattaci
+          Richiedi un preventivo
         </Link>
       </div>
     </div>
