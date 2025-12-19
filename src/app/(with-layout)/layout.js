@@ -18,7 +18,12 @@ const montserrat = Montserrat({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="it" className={montserrat.variable} data-scroll-behavior="smooth">
+    <html
+      lang="it"
+      className={montserrat.variable}
+      data-scroll-behavior="smooth"
+    >
+      <GoogleAnalytics gaId="G-140X47N3ML" />
       <GoogleTagManager gtmId="GTM-K7QSNQTH" />
       <Head>
         <meta name="apple-mobile-web-app-title" content="GSM Sistemi" />
