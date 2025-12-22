@@ -20,7 +20,7 @@ export default function HeroHome() {
             width={2500}
             height={1801}
             style={{ width: "100%", height: "auto" }}
-            loading="eager"
+            fetchPriority="high"
           />
         </div>
         <HeroTextDynamic />
