@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Hero from "@/app/components/Hero";
 import PageLayout from "@/app/components/PageLayout";
-import articles from "@/data/articles";
+import rawArticles from "@/data/articles";
 import jobs from "@/data/jobs.json";
 import Image from "next/image";
 import Carousel from "@/app/components/Carousel";
@@ -17,6 +17,10 @@ export const metadata = {
     canonical: "/news",
   },
 };
+
+const articles = rawArticles.sort((a, b) => {
+  return new Date(b.date) - new Date(a.date);
+});
 
 export default function NewsPage() {
   return (
