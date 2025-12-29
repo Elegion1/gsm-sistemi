@@ -18,9 +18,14 @@ export const metadata = {
   },
 };
 
-const articles = rawArticles.sort((a, b) => {
-  return new Date(b.date) - new Date(a.date);
-});
+const parseDate = (str) => {
+  const [day, month, year] = str.split("/");
+  return new Date(`${year}-${month}-${day}`);
+};
+
+const articles = [...rawArticles].sort(
+  (a, b) => parseDate(b.date) - parseDate(a.date)
+);
 
 export default function NewsPage() {
   return (
