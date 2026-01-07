@@ -13,7 +13,7 @@ export const jsonLd = {
   "@context": "https://schema.org",
   "@type": owner.businessType,
   name: owner.legalName,
-  telephone: owner.landline || owner.phone,
+  telephone: owner.phone2 || owner.phone || owner.landline,
   email: owner.email,
   address: {
     "@type": "PostalAddress",
