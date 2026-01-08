@@ -18,12 +18,6 @@ export default function Social({ item }) {
         if (!value || value.trim() === "") return null;
 
         let href = value;
-        if (key === "whatsapp") {
-          const cleanPhone = owner.phone2
-            .replace(/^(\+39)/, "")
-            .replace(/\D/g, "");
-          href = value + cleanPhone;
-        }
 
         return (
           <Link

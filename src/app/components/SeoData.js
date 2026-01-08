@@ -1,4 +1,3 @@
-
 import owner from "@/data/owner.json";
 const a = owner.address;
 const fullAddress = `${a.street} ${a.streetNumber}, ${a.zip} ${a.city} (${a.province}), ${a.country}`;
@@ -15,6 +14,14 @@ export const jsonLd = {
   name: owner.legalName,
   telephone: owner.phone2 || owner.phone || owner.landline,
   email: owner.email,
+  url: owner.website,
+  sameAs: [
+    owner.socials.facebook,
+    owner.socials.instagram,
+    owner.socials.whatsapp,
+    owner.socials.google,
+  ].filter(Boolean),
+  image: owner.logoUrl,
   address: {
     "@type": "PostalAddress",
     streetAddress: `${owner.address.street} ${owner.address.streetNumber}`,
