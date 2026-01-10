@@ -14,6 +14,8 @@ export default function Navbar() {
   const [shrink, setShrink] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  const navHeight = isMobile ? (shrink ? 60 : 80) : shrink ? 80 : 120;
+
   useEffect(() => {
     const checkSize = () => {
       setIsMobile(window.innerWidth < 768); // breakpoint tablet/mobile
@@ -40,6 +42,7 @@ export default function Navbar() {
 
   return (
     <nav
+      style={{ height: navHeight }}
       className={`navbar fixed-top w-100 d-flex align-items-center justify-content-md-between justify-content-center px-md-4 flex-column flex-md-row gap-2 gap-md-0 ${
         shrink ? "navbar-shrink" : ""
       }`}

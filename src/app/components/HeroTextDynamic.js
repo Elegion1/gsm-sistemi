@@ -60,7 +60,13 @@ export default function HeroTextDynamic() {
     translateY = baseOffset + dynamicTranslate;
   } else {
     // mobile/tablet: subito sotto la navbar
-    translateY = (navbarHeight / window.innerHeight) * 70;
+    translateY = (navbarHeight / window.innerHeight) * 100 + 2; // 5vh di margine
+    console.log("HeroText debug", {
+      breakpoint,
+      translateY,
+      navbarHeight,
+      innerHeight: window.innerHeight,
+    });
   }
 
   return (

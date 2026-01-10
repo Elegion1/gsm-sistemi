@@ -46,8 +46,8 @@ p {
 .navbar-shrink {
   opacity: 0.9;
   backdrop-filter: blur(10px);
-  height: 10dvh;
 }
+
 
 .hero {
   position: relative;
