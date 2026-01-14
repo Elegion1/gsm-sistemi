@@ -12,7 +12,9 @@ import partners from "@/data/partners.json";
 import jobs from "@/data/jobs.json";
 import Carousel from "@/app/components/Carousel";
 import reviews from "@/data/reviews.json";
+import articles from "@/data/articles.json";
 import ReviewCard from "@/app/components/ReviewCard";
+import Article from "@/app/components/Article";
 
 const products = productsData.slice(0, 8);
 
@@ -24,6 +26,19 @@ export const metadata = {
     canonical: "/",
   },
 };
+
+const recentArticles = articles
+  .slice()
+  .sort((a, b) => {
+    const [da, ma, ya] = a.date.split("/").map(Number);
+    const [db, mb, yb] = b.date.split("/").map(Number);
+
+    const dateA = new Date(ya, ma - 1, da);
+    const dateB = new Date(yb, mb - 1, db);
+
+    return dateB - dateA;
+  })
+  .slice(0, 4);
 
 const cta = [
   "consulenza & progettazione",
@@ -61,9 +76,19 @@ export default function Home() {
               precise e durevoli, affiancando privati e aziende con
               professionalità e trasparenza.
             </p>
-            <div className="w-100 d-flex justify-content-center align-items-center mt-3">
-              <Link href={"/news"} className="btn bg-a text-d">
-                Vai alle news
+          </section>
+          <section id="blog">
+            <h3 className="text-uppercase fw-medium text-center">blog</h3>
+            <div className="row g-4 mt-4 justify-content-center">
+              {recentArticles.map((article) => (
+                <div key={article.slug} className="col-12 col-md-6">
+                  <Article article={article} height={180} />
+                </div>
+              ))}
+            </div>
+            <div className="d-flex justify-content-center align-items-center mt-4">
+              <Link className="btn bg-a text-d text-center" href="/news">
+                Vai al blog
               </Link>
             </div>
           </section>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ContactCTA() {
   return (
-    <section id="contacts">
+    <section id="contacts" className="mb-4">
       <h2 className="text-uppercase fw-medium text-center">
         Richiedi un preventivo gratuito
       </h2>

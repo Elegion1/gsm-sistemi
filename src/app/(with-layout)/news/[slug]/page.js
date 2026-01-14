@@ -3,6 +3,7 @@ import ContactCTA from "@/app/components/ContactCTA";
 import articles from "@/data/articles";
 import owner from "@/data/owner";
 import Link from "next/link";
+import Article from "@/app/components/Article";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -29,10 +30,24 @@ export async function generateMetadata({ params }) {
 export default async function ArticlePage({ params }) {
   const { slug } = await params;
   const article = articles.find((a) => a.slug === slug);
-  const articlesRelated = articles.filter((a) => a.slug !== slug).slice(0, 3);
+  const articlesRelated = articles
+    .filter((a) => a.slug !== slug)
+    .slice()
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 3);
 
   if (!article) {
-    return <div>Article not found</div>;
+    return (
+      <div
+        className="d-flex justify-content-center align-items-center flex-column gap-4"
+        style={{ height: "60vh" }}
+      >
+        <h1 className="text-center text-uppercase">Articolo non trovato</h1>
+        <Link className="btn bg-a text-d" href="/news">
+          Torna al blog
+        </Link>
+      </div>
+    );
   }
 
   return (
@@ -57,21 +72,7 @@ export default async function ArticlePage({ params }) {
             </h2>
             <div className="px-5 pb-5">
               {articlesRelated.map((related) => (
-                <article
-                  key={related.slug}
-                  className="mb-3 d-flex flex-column align-items-center article-card bg-d p-3"
-                >
-                  <h3 className="fw-normal fs-6 fw-bold mb-2 text-center">
-                    {related.title}
-                  </h3>
-                  <p className="text-muted text-center">{related.excerpt}</p>
-                  <Link
-                    href={`/news/${related.slug}`}
-                    className="btn bg-a text-d"
-                  >
-                    Leggi di più
-                  </Link>
-                </article>
+                <Article key={related.slug} article={related} />
               ))}
             </div>
           </aside>
