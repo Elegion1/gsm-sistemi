@@ -48,7 +48,6 @@ p {
   backdrop-filter: blur(10px);
 }
 
-
 .hero {
   position: relative;
 }
@@ -108,6 +107,16 @@ p {
 
 .partner-card {
   overflow: hidden;
+}
+
+.article-card {
+  height: var(--card-height);
+}
+
+@media (max-width: 992px) {
+  .article-card {
+    height: auto;
+  }
 }
 
 .partner-overlay {

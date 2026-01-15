@@ -81,8 +81,8 @@ export default function Home() {
             <h3 className="text-uppercase fw-medium text-center">blog</h3>
             <div className="row g-4 mt-4 justify-content-center">
               {recentArticles.map((article) => (
-                <div key={article.slug} className="col-12 col-md-6">
-                  <Article article={article} height={180} />
+                <div key={article.slug} className="col-12 col-lg-6">
+                  <Article article={article} height={25} />
                 </div>
               ))}
             </div>

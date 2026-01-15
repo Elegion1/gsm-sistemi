@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Article({ article, height }) {
   return (
     <article
-      style={{ height: height }}
+      style={{ "--card-height": `${height}dvh` }}
       key={article.slug}
       className="mb-3 d-flex flex-column align-items-center justify-content-center article-card bg-d p-3"
     >
