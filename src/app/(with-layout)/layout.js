@@ -4,7 +4,6 @@ import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { Montserrat } from "next/font/google";
 import "@/app/globals.css";
 import Head from "next/head";
-import PlerdyScript from "@/app/components/PlerdyScript";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import SeoData from "@/app/components/SeoData";
@@ -38,7 +37,6 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <BootstrapClient />
-        <PlerdyScript />
       </body>
     </html>
   );
