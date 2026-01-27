@@ -2,7 +2,7 @@ import Link from "next/link";
 import owner from "@/data/owner.json";
 
 export const metadata = {
-  title: `Privacy Policy | ${owner.companyName}`,
+  title: `Privacy e Cookie Policy | ${owner.companyName}`,
   description: `Informativa completa sul trattamento dei dati personali da parte di ${owner.companyName}. Scopri come gestiamo sicurezza, contatti, richieste dal sito e tutela della privacy`,
   alternates: {
     canonical: "/privacy-terms",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function PrivacyPage() {
   return (
     <div style={{ marginTop: "25vh" }} className="container mb-5">
-      <h1 className="text-center fw-bold mb-4">Informativa Privacy</h1>
+      <h1 className="text-center fw-bold mb-4">Privacy e Cookie Policy</h1>
       <p className="text-muted text-end">Ultimo aggiornamento: 12/12/2025</p>
 
       <section className="mb-4">
@@ -109,6 +109,23 @@ export default function PrivacyPage() {
           Ci riserviamo il diritto di aggiornare la presente informativa.
           Eventuali modifiche saranno pubblicate su questa pagina con la data di
           aggiornamento aggiornata.
+        </p>
+      </section>
+
+      <section className="mb-4">
+        <h2 className="fw-semibold">9. Cookie</h2>
+        <p>
+          Il sito utilizza cookie tecnici necessari al corretto funzionamento
+          delle pagine e, ove presenti, cookie di analisi in forma aggregata e
+          anonima.
+        </p>
+        <p>
+          Non vengono utilizzati cookie di profilazione né cookie di terze parti
+          a fini pubblicitari senza il consenso dell’utente.
+        </p>
+        <p>
+          È possibile gestire o disabilitare i cookie tramite le impostazioni
+          del proprio browser.
         </p>
       </section>
     </div>

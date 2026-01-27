@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Hero from "@/app/components/Hero";
 import PageLayout from "@/app/components/PageLayout";
-import rawArticles from "@/data/articles";
+import { getAllArticles } from "@/scripts/articlesLoader";
 import jobs from "@/data/jobs.json";
 import Image from "next/image";
 import Carousel from "@/app/components/Carousel";
@@ -18,14 +18,7 @@ export const metadata = {
   },
 };
 
-const parseDate = (str) => {
-  const [day, month, year] = str.split("/");
-  return new Date(`${year}-${month}-${day}`);
-};
-
-const articles = [...rawArticles].sort(
-  (a, b) => parseDate(b.date) - parseDate(a.date)
-);
+const articles = getAllArticles();
 
 export default function NewsPage() {
   return (
@@ -38,23 +31,42 @@ export default function NewsPage() {
         image={"/images/news.png"}
       />
       <PageLayout>
-        <div className="row">
+        <div className="row gap-3 gap-lg-0">
           <section className="col-12 col-md-6">
-            {articles.map((article) => (
-              <article key={article.slug} className="mb-5">
-                <div className="d-flex justify-content-between align-items-center mb-3">
-                  <h3 className="fw-normal fs-4">{article.title}</h3>
-                  <time className="text-muted">{article.date}</time>
-                </div>
-                <p className="text-muted">{article.excerpt}</p>
-                <Link
-                  href={`/news/${article.slug}`}
-                  className="btn text-d bg-a"
+            <h3 className="fw-normal fs-4 mb-3">Ultimi articoli</h3>
+            <div
+              className="d-flex flex-column overflow-y-auto gap-3 pb-3"
+              style={{
+                maxHeight:"150vh",
+                scrollSnapType: "y mandatory",
+                WebkitOverflowScrolling: "touch",
+              }}
+            >
+              {articles.map((article) => (
+                <article
+                  key={article.slug}
+                  className="flex-shrink-0 bg-light p-3 rounded"
+                  style={{
+                    minHeight: "120px", // altezza minima per ciascun articolo
+                    scrollSnapAlign: "start",
+                  }}
                 >
-                  Leggi di più
-                </Link>
-              </article>
-            ))}
+                  <div className="d-flex justify-content-between align-items-center mb-2">
+                    <h4 className="fw-medium fs-5">{article.title}</h4>
+                    <time className="text-muted">
+                      <small>{article.date}</small>
+                    </time>
+                  </div>
+                  <p className="text-muted">{article.excerpt}</p>
+                  <Link
+                    href={`/news/${article.slug}`}
+                    className="btn text-d bg-a mt-2"
+                  >
+                    Leggi di più
+                  </Link>
+                </article>
+              ))}
+            </div>
           </section>
           <article className="col-12 col-md-6">
             {jobs.length > 0 && (

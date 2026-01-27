@@ -12,9 +12,9 @@ import partners from "@/data/partners.json";
 import jobs from "@/data/jobs.json";
 import Carousel from "@/app/components/Carousel";
 import reviews from "@/data/reviews.json";
-import articles from "@/data/articles.json";
+import { getRecentArticles } from "@/scripts/articlesLoader";
 import ReviewCard from "@/app/components/ReviewCard";
-import Article from "@/app/components/Article";
+import Article from "@/app/components/ArticleCard";
 
 const products = productsData.slice(0, 8);
 
@@ -27,18 +27,7 @@ export const metadata = {
   },
 };
 
-const recentArticles = articles
-  .slice()
-  .sort((a, b) => {
-    const [da, ma, ya] = a.date.split("/").map(Number);
-    const [db, mb, yb] = b.date.split("/").map(Number);
-
-    const dateA = new Date(ya, ma - 1, da);
-    const dateB = new Date(yb, mb - 1, db);
-
-    return dateB - dateA;
-  })
-  .slice(0, 4);
+const recentArticles = getRecentArticles(4);
 
 const cta = [
   "consulenza & progettazione",

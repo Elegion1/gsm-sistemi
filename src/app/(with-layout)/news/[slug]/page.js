@@ -1,15 +1,16 @@
 import PageLayout from "@/app/components/PageLayout";
 import ContactCTA from "@/app/components/ContactCTA";
-import articles from "@/data/articles";
+import { getAllArticles, getArticleBySlug } from "@/scripts/articlesLoader";
 import owner from "@/data/owner";
 import Link from "next/link";
-import Article from "@/app/components/Article";
+import Article from "@/app/components/ArticleCard";
+import ArticleBody from "@/app/components/ArticleBody";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
 
-  const article = articles.find((p) => p.slug === slug);
+  const article = getArticleBySlug(slug);
 
   if (!article) {
     return {
@@ -29,10 +30,9 @@ export async function generateMetadata({ params }) {
 
 export default async function ArticlePage({ params }) {
   const { slug } = await params;
-  const article = articles.find((a) => a.slug === slug);
-  const articlesRelated = articles
+  const article = getArticleBySlug(slug);
+  const articlesRelated = getAllArticles()
     .filter((a) => a.slug !== slug)
-    .slice()
     .sort(() => Math.random() - 0.5)
     .slice(0, 3);
 
@@ -57,14 +57,7 @@ export default async function ArticlePage({ params }) {
         <section className="row">
           <article id={article.slug} className="col-12 col-md-6">
             <h1>{article.title}</h1>
-            <div>
-              {article.body.split("\n").map((line, i) => (
-                <span key={i}>
-                  {line}
-                  <br />
-                </span>
-              ))}
-            </div>
+            <ArticleBody body={article.body} />
           </article>
           <aside className="col-12 col-md-6">
             <h2 className="text-uppercase text-center fs-6 fw-bold mb-4 mt-5 mt-md-0">
