@@ -1,139 +1,217 @@
 [
   {
     "name": "Infissi in PVC",
-    "description": "Scopri il comfort senza compromessi con gli infissi in PVC: mantieni la casa calda in inverno e fresca in estate, con un eccellente isolamento acustico. Resistenti agli agenti atmosferici e facili da pulire, uniscono praticità e design moderno. Scegli tra colori e finiture eleganti per valorizzare ogni ambiente",
+    "description": "Infissi moderni e resistenti, pensati per rendere la tua casa più confortevole e sicura.",
     "image": "/images/products/infissi-in-pvc.png",
     "slug": "infissi-pvc",
     "id": "70c26741-8146-49e8-9add-093384b52ed5",
-    "brands": ["tecnoplast"]
+    "materials": ["PVC"],
+    "brands": [{ "name": "Tecnoplast", "image": "tecnoplast.png" }],
+    "useCases": ["abitazioni", "uffici"],
+    "features": [
+      "isolamento termico",
+      "isolamento acustico",
+      "facilità di manutenzione"
+    ],
+    "automation": false
   },
   {
     "name": "Porte Blindate",
-    "description": "Proteggi la tua casa senza rinunciare allo stile con le porte blindate, robuste e sicure. Materiali di alta qualità resistono agli urti e agli accessi indesiderati, mentre le finiture eleganti completano l’arredamento. Sicurezza e design insieme in un unico prodotto",
+    "description": "Sicurezza e stile per proteggere la tua casa e i tuoi ambienti più importanti.",
     "image": "/images/products/porte-blindate.png",
     "slug": "porte-blindate",
     "id": "970194c2-1ffe-451a-967d-c186ef454eb9",
-    "brands": ["colo-security-sistems"]
+    "materials": ["Acciaio", "Legno", "Alluminio", "PVC"],
+    "brands": [
+      { "name": "Colo Security Systems", "image": "colo-security-system.png" }
+    ],
+    "useCases": ["ingressi residenziali", "uffici"],
+    "features": ["sicurezza antieffrazione", "resistenza strutturale"],
+    "automation": false
   },
   {
     "name": "Zanzariere su Misura",
-    "description": "Goditi l’estate senza fastidi: le zanzariere su misura proteggono dagli insetti senza oscurare la luce naturale. Facili da installare e personalizzabili, combinano praticità, eleganza e comfort. Rendi la tua casa più sicura e accogliente in ogni stagione",
+    "description": "Protezione dagli insetti senza rinunciare alla luce naturale e al comfort della tua casa.",
     "image": "/images/products/zanzariere-su-misura.png",
     "slug": "zanzariere-su-misura",
     "id": "64c03da5-ce6b-42e3-ad4b-5ec9abd242cf",
-    "brands": ["zanzar-sistem", "effetrade", "sharknet", "bettio"]
+    "materials": ["Alluminio", "Fibra di vetro", "Polipropilene", "Poliestere"],
+    "brands": [
+      { "name": "Zanzar Sistem", "image": "zanzar-sistem.png" },
+      { "name": "Effetrade", "image": "effetrade.svg" },
+      { "name": "Sharknet", "image": "sharknet.png" },
+      { "name": "Bettio", "image": "bettio.png" }
+    ],
+    "useCases": ["finestre", "porte finestre"],
+    "features": ["protezione insetti", "passaggio luce", "soluzioni su misura"],
+    "automation": false
   },
   {
     "name": "Box Doccia",
-    "description": "Rinnova il tuo bagno con i box doccia dal design moderno e funzionale. Vetro temperato e materiali resistenti assicurano sicurezza e facilità di pulizia. Scegli la forma e le dimensioni perfette per il tuo spazio, combinando estetica e praticità",
+    "description": "Soluzioni moderne e funzionali per rinnovare il bagno con stile e sicurezza.",
     "image": "/images/products/box-doccia.png",
     "slug": "box-doccia",
     "id": "7547da46-011c-48e6-97db-a56298f3ba18",
-    "brands": ["bressani"]
+    "materials": ["Vetro temperato", "Acrilico", "Acciaio INOX", "Alluminio"],
+    "brands": [{ "name": "Bressani", "image": "bressani.png" }],
+    "useCases": ["bagni residenziali"],
+    "features": ["sicurezza", "facilità di pulizia", "design moderno"],
+    "automation": false
   },
   {
     "name": "Porte Interne",
-    "description": "Definisci gli spazi con eleganza grazie alle porte interne di alta qualità. Materiali robusti e finiture curate garantiscono durata e stile. Perfette per ogni ambiente, valorizzano l’arredamento con un tocco raffinato",
+    "description": "Eleganza e praticità per definire gli spazi interni della tua casa.",
     "image": "/images/products/porte-interne.png",
     "slug": "porte-interne",
     "id": "578de462-3277-48dd-a7ed-17a1baca8912",
-    "brands": ["alessi-porte"]
+    "materials": ["Tranciato", "Laminato", "Vetro"],
+    "brands": [{ "name": "Alessi Porte", "image": "alessi-porte.png" }],
+    "useCases": ["ambienti interni"],
+    "features": ["design", "durabilità"],
+    "automation": false
   },
   {
     "name": "Porte a Soffietto",
-    "description": "Soluzioni salvaspazio che uniscono praticità e design: le porte a soffietto ottimizzano ogni ambiente senza rinunciare allo stile. Facili da aprire e chiudere, sono disponibili in vari materiali e finiture. Perfette per appartamenti e stanze compatte",
+    "description": "Soluzioni salvaspazio pratiche e funzionali per ambienti compatti.",
     "image": "/images/products/porte-a-soffietto.png",
     "slug": "porte-soffietto",
     "id": "95c7d924-b061-4e0e-9800-ac36434d6fcc",
-    "brands": ["forte"]
+    "materials": ["PVC"],
+    "brands": [{ "name": "Forte", "image": "forte.png" }],
+    "useCases": ["bagni", "ripostigli", "ambienti piccoli"],
+    "features": ["salvaspazio", "facilità di utilizzo"],
+    "automation": false
   },
   {
     "name": "Tapparelle",
-    "description": "Comfort e sicurezza con un semplice gesto: le tapparelle offrono isolamento termico e protezione solare. Disponibili in versioni manuali o motorizzate, si integrano armoniosamente con ogni facciata. Design curato e praticità per la tua casa",
+    "description": "Pratiche e sicure, migliorano comfort e protezione solare della tua casa.",
     "image": "/images/products/tapparelle.png",
     "slug": "tapparelle",
     "id": "df10e297-9732-47f9-bedc-cdff0c646c39",
-    "brands": ["pracal"]
+    "materials": ["Alluminio coibentato", "Alluminio estruso", "Acciaio"],
+    "brands": [{ "name": "Pracal", "image": "pracal.png" }],
+    "useCases": ["finestre", "porte finestre"],
+    "features": ["isolamento termico", "protezione solare"],
+    "automation": true
   },
   {
     "name": "Tende da Sole",
-    "description": "Crea spazi freschi e accoglienti con le tende da sole, proteggendo la tua casa dai raggi solari. Resistenti agli agenti atmosferici e disponibili in diversi modelli e tessuti, uniscono funzionalità e stile. Ideali per balconi, terrazzi e giardini",
+    "description": "Protezione dal sole per creare spazi freschi e confortevoli all’aperto.",
     "image": "/images/products/tende-da-sole.png",
     "slug": "tende-da-sole",
     "id": "0ffca9c1-02eb-44e2-9c23-eacd202e818b",
-    "brands": ["tempotest"]
+    "materials": ["Materia", "Micro to Macro", "Seta Cruda"],
+    "brands": [{ "name": "Tempotest", "image": "tempotest.png" }],
+    "useCases": ["balconi", "terrazzi", "giardini"],
+    "features": ["protezione solare", "resistenza agli agenti atmosferici"],
+    "automation": false
   },
   {
     "name": "Tende Oscuranti",
-    "description": "Rendi la tua camera un rifugio perfetto: le tende oscuranti garantiscono privacy e buio totale, ideali per il riposo o per lavorare senza distrazioni. Tessuti di alta qualità e design elegante, facili da montare e pulire",
+    "description": "Ideali per garantire privacy e buio totale in ambienti dedicati al riposo.",
     "image": "/images/products/tende-oscuranti.png",
     "slug": "tende-oscuranti",
     "id": "eccd7f4a-4c68-46e4-82bf-9286a523f8a4",
-    "brands": ["cento"]
+    "materials": [],
+    "brands": [{ "name": "Cento", "image": "cento.png" }],
+    "useCases": ["camere da letto", "uffici"],
+    "features": ["oscuramento totale", "privacy"],
+    "automation": false
   },
   {
     "name": "Tende Tecniche",
-    "description": "Innovazione e stile in ogni ambiente: le tende tecniche permettono di gestire luce e calore con precisione. Perfette per uffici e case moderne, offrono funzionalità avanzate e design ricercato. Soluzioni su misura per comfort e estetica",
+    "description": "Soluzioni precise per gestire luce e calore in ambienti moderni e professionali.",
     "image": "/images/products/tende-tecniche.png",
     "slug": "tende-tecniche",
     "id": "1e30f6f5-8044-45a5-b1ce-d9c57b536613",
-    "brands": ["cento"]
+    "materials": [],
+    "brands": [{ "name": "Cento", "image": "cento.png" }],
+    "useCases": ["uffici", "abitazioni moderne"],
+    "features": ["controllo luminosità", "design tecnico"],
+    "automation": false
   },
   {
     "name": "Infissi in Alluminio",
-    "description": "Dai un tocco moderno alla tua casa con gli infissi in alluminio: resistenti, leggeri e dal design elegante. Perfetti per grandi vetrate, assicurano isolamento termico e acustico ottimale. Una scelta duratura che unisce stile e performance",
+    "description": "Infissi leggeri e resistenti, ideali per grandi vetrate e ambienti moderni.",
     "image": "/images/products/infissi-in-alluminio.png",
     "slug": "infissi-alluminio",
     "id": "25aaff33-5ec5-44eb-aa9b-7c8a5b55905c",
-    "brands": ["tecnoplast"]
+    "materials": ["Alluminio"],
+    "brands": [{ "name": "Tecnoplast", "image": "tecnoplast.png" }],
+    "useCases": ["abitazioni moderne", "vetrate"],
+    "features": ["resistenza", "design moderno"],
+    "automation": false
   },
   {
     "name": "Infissi in Legno",
-    "description": "Calore e naturalezza per la tua abitazione: gli infissi in legno offrono isolamento termico e acustico, combinando eleganza e funzionalità. Disponibili in diverse essenze e finiture, valorizzano ogni stanza con un tocco raffinato",
+    "description": "Infissi che uniscono calore, isolamento e raffinatezza estetica.",
     "image": "/images/products/infissi-in-legno.png",
     "slug": "infissi-legno",
     "id": "6f820499-fb11-4561-9e14-88a5b35f2721",
-    "brands": ["tecnoplast"]
+    "materials": ["Legno"],
+    "brands": [{ "name": "Tecnoplast", "image": "tecnoplast.png" }],
+    "useCases": ["abitazioni", "ambienti classici"],
+    "features": ["isolamento termico", "estetica naturale"],
+    "automation": false
   },
   {
     "name": "Infissi Legno/Alluminio",
-    "description": "Il meglio di due mondi: gli infissi legno/alluminio uniscono la bellezza del legno interno alla resistenza dell’alluminio esterno. Isolamento termico ottimale, protezione dagli agenti atmosferici e design moderno in un unico prodotto di alta qualità",
+    "description": "Combinazione di eleganza interna e resistenza esterna per ogni esigenza abitativa.",
     "image": "/images/products/infissi-in-legno-alluminio.png",
     "slug": "infissi-legno-alluminio",
     "id": "5ae1f965-eeaa-4efc-9bd5-0d7cf3eb376c",
-    "brands": ["tecnoplast"]
+    "materials": ["Legno", "Alluminio"],
+    "brands": [{ "name": "Tecnoplast", "image": "tecnoplast.png" }],
+    "useCases": ["abitazioni", "edifici moderni"],
+    "features": ["durabilità", "isolamento"],
+    "automation": false
   },
   {
     "name": "Vetrate Panoramiche",
-    "description": "Amplia gli spazi e lascia entrare la luce: le vetrate panoramiche trasformano la tua casa in ambienti luminosi e ariosi. Vetro temperato e profili robusti garantiscono sicurezza e isolamento. Eleganza e comfort in ogni stanza",
+    "description": "Vetrate che valorizzano gli spazi e lasciano entrare luce naturale in ogni ambiente.",
     "image": "/images/products/vetrate-panoramiche.png",
     "slug": "vetrate-panoramiche",
     "id": "e6dd2c48-96c9-4684-8269-f2b9d4a236a7",
-    "brands": ["sliding-crystal"]
+    "materials": ["Vetro temperato", "Alluminio"],
+    "brands": [{ "name": "Sliding Crystal", "image": "sliding-crystal.png" }],
+    "useCases": ["verande", "terrazzi", "spazi esterni"],
+    "features": ["luminosità", "protezione"],
+    "automation": false
   },
   {
     "name": "Pergole Bioclimatiche",
-    "description": "Vivi all’aperto tutto l’anno con le pergole bioclimatiche: regolano luce e ventilazione per creare spazi confortevoli. Strutture robuste e design elegante si integrano perfettamente con giardini e terrazzi. Comfort, stile e funzionalità senza compromessi",
+    "description": "Strutture progettate per vivere gli spazi esterni tutto l’anno con comfort e stile.",
     "image": "/images/products/pergole-bioclimatiche.png",
     "slug": "pergole-bioclimatiche",
     "id": "be2aaf4f-6098-4143-b642-be2dc83a98eb",
-    "brands": ["sliding-crystal"]
+    "materials": ["Alluminio"],
+    "brands": [{ "name": "Sliding Crystal", "image": "sliding-crystal.png" }],
+    "useCases": ["giardini", "terrazzi"],
+    "features": ["controllo climatico", "struttura modulare"],
+    "automation": true
   },
   {
     "name": "Pavimentazione in SPC",
-    "description": "Resistente, impermeabile e facile da pulire: la pavimentazione in SPC unisce praticità e design. Simula perfettamente legno o pietra, conferendo stile e comfort agli ambienti. Installazione semplice e manutenzione minima per una scelta duratura",
+    "description": "Pavimenti resistenti e versatili, ideali per ambienti ad alto traffico.",
     "image": "/images/products/pavimentazione-in-spc.png",
     "slug": "pavimentazione-spc",
     "id": "0a842441-577f-427b-8ce1-0065f8a62e7b",
-    "brands": ["rg-distribution"]
+    "materials": ["SPC"],
+    "brands": [{ "name": "RG Distribution", "image": "rg-distribution.png" }],
+    "useCases": ["abitazioni", "uffici"],
+    "features": ["impermeabilità", "resistenza"],
+    "automation": false
   },
-
   {
     "name": "Parquet",
-    "description": "Eleganza e calore naturale per la tua casa: il parquet valorizza ogni stanza con finiture pregiate e materiali di qualità. Facile da pulire e mantenere, garantisce comfort e durata nel tempo. Una scelta di classe che unisce estetica e funzionalità",
+    "description": "Pavimentazione in legno elegante e confortevole, perfetta per ogni ambiente interno.",
     "image": "/images/products/parquet.png",
     "slug": "parquet",
     "id": "98286ae2-a170-47d6-8463-8b82e528a768",
-    "brands": ["rg-distribution"]
+    "materials": ["Legno"],
+    "brands": [{ "name": "RG Distribution", "image": "rg-distribution.png" }],
+    "useCases": ["ambienti interni"],
+    "features": ["eleganza", "comfort"],
+    "automation": false
   }
 ]

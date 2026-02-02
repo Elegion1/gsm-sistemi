@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   const slug = resolvedParams.slug;
 
   const product = products.find((p) => p.slug === slug);
-  const brands = partners.filter((p) => product.brands.includes(p.slug));
+  const brands = partners.filter((p) => product.brands.includes(p.name));
 
   if (!product) {
     return {
@@ -31,11 +31,49 @@ export async function generateMetadata({ params }) {
   };
 }
 
+export function buildProductText(product) {
+  const parts = [];
+
+  if (product.materials?.length) {
+    parts.push(
+      `Realizzato in ${product.materials.join(", ")}, questo prodotto garantisce qualità e durata nel tempo.`,
+    );
+  }
+
+  if (product.features?.length) {
+    parts.push(
+      `Tra le principali caratteristiche troviamo ${product.features.join(
+        ", ",
+      )}, pensate per offrire prestazioni elevate e affidabilità.`,
+    );
+  }
+
+  if (product.useCases?.length) {
+    parts.push(
+      `È una soluzione ideale per ${product.useCases.join(
+        ", ",
+      )}, adattandosi a contesti diversi con grande versatilità.`,
+    );
+  }
+
+  if (product.automation) {
+    parts.push(
+      `Il prodotto è compatibile con sistemi di automazione, permettendo una gestione comoda, moderna e programmabile.`,
+    );
+  }
+
+  return parts;
+}
+
 export default async function ProductPage({ params }) {
   const { slug } = await params;
 
   const product = products.find((p) => p.slug === slug);
-  const brands = partners.filter((p) => product.brands.includes(p.slug));
+  const brands = partners.filter((p) =>
+    product.brands.some((b) => b.name === p.name),
+  );
+
+  const productText = buildProductText(product);
 
   if (!product) {
     return <div>Prodotto non trovato</div>;
@@ -106,6 +144,13 @@ export default async function ProductPage({ params }) {
               )}
               <p className="mt-3 text-center text-md-start">
                 {product.description}
+                {productText.length > 0 && (
+                  <>
+                    {productText.map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                  </>
+                )}
               </p>
             </div>
           </section>
