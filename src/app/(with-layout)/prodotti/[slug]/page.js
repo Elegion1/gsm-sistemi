@@ -72,7 +72,7 @@ export default async function ProductPage({ params }) {
   const brands = partners.filter((p) =>
     product.brands.some((b) => b.name === p.name),
   );
-
+  console.log("Brands:", brands);
   const productText = buildProductText(product);
 
   if (!product) {
@@ -142,16 +142,13 @@ export default async function ProductPage({ params }) {
                   {product.name}
                 </h1>
               )}
-              <p className="mt-3 text-center text-md-start">
-                {product.description}
-                {productText.length > 0 && (
-                  <>
-                    {productText.map((paragraph, index) => (
-                      <p key={index}>{paragraph}</p>
-                    ))}
-                  </>
-                )}
-              </p>
+              <section className="mt-3 text-center text-md-start">
+                <p>{product.description}</p>
+
+                {productText.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </section>
             </div>
           </section>
           <RelatedProducts items={relatedProducts} />

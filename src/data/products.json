@@ -23,7 +23,7 @@
     "id": "970194c2-1ffe-451a-967d-c186ef454eb9",
     "materials": ["Acciaio", "Legno", "Alluminio", "PVC"],
     "brands": [
-      { "name": "Colo Security Systems", "image": "colo-security-system.png" }
+      { "name": "Colò Security System", "image": "colo-security-system.png" }
     ],
     "useCases": ["ingressi residenziali", "uffici"],
     "features": ["sicurezza antieffrazione", "resistenza strutturale"],

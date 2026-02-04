@@ -30,7 +30,7 @@ export default function RelatedProducts({ items }) {
         }}
         loop={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="w-100 h-100"
+        className="w-100 h-auto py-5"
       >
         {items.map((product, index) => (
           <SwiperSlide
