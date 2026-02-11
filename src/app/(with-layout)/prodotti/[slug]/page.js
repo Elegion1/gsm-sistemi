@@ -88,7 +88,7 @@ export default async function ProductPage({ params }) {
         <div className="row">
           <section className="col-12 col-md-6">
             <div
-              className="w-100 position-relative "
+              className="w-100 position-relative"
               style={{ height: "300px" }}
             >
               <Image
@@ -151,7 +151,9 @@ export default async function ProductPage({ params }) {
               </section>
             </div>
           </section>
-          <RelatedProducts items={relatedProducts} />
+          <section className="col-12 col-md-6">
+            <RelatedProducts items={relatedProducts} />
+          </section>
         </div>
         <div className="my-5">
           <ContactCTA />

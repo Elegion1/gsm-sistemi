@@ -2,6 +2,8 @@ import PageLayout from "@/app/components/PageLayout";
 import ContactCTA from "@/app/components/ContactCTA";
 import { getAllArticles, getArticleBySlug } from "@/scripts/articlesLoader";
 import owner from "@/data/owner";
+import products from "@/data/products";
+import RelatedProducts from "@/app/components/RelatedProducts";
 import Link from "next/link";
 import Article from "@/app/components/ArticleCard";
 import ArticleBody from "@/app/components/ArticleBody";
@@ -52,7 +54,7 @@ export default async function ArticlePage({ params }) {
 
   return (
     <>
-      <div style={{ height: "20vh" }}></div>
+      <div style={{ height: "15vh" }}></div>
       <PageLayout>
         <section className="row">
           <article id={article.slug} className="col-12 col-md-6">
@@ -60,13 +62,19 @@ export default async function ArticlePage({ params }) {
             <ArticleBody body={article.body} />
           </article>
           <aside className="col-12 col-md-6">
-            <h2 className="text-uppercase text-center fs-6 fw-bold mb-4 mt-5 mt-md-0">
+            <h2 className="text-uppercase text-center fs-6 fw-bold mb-4 mt-5 mt-md-0 w-100 w-md-auto">
               Articoli correlati
             </h2>
-            <div className="px-5 pb-5">
+            <div className="px-2 px-md-5">
               {articlesRelated.map((related) => (
                 <Article key={related.slug} article={related} />
               ))}
+            </div>
+            <div className="">
+              <h3 className="text-uppercase text-center fs-6 fw-bold mb-4 mt-5 mt-md-0 w-100 w-md-auto">
+                Scopri i nostri prodotti
+              </h3>
+              <RelatedProducts items={products} title={false} />
             </div>
           </aside>
         </section>

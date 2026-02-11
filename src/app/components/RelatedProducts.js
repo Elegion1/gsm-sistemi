@@ -7,12 +7,14 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import ProductCard from "@/app/components/ProductCard";
 
-export default function RelatedProducts({ items }) {
+export default function RelatedProducts({ items, title = true }) {
   return (
-    <section className="col-12 col-md-6">
-      <h2 className="text-uppercase fw-medium text-center">
-        Prodotti correlati
-      </h2>
+    <>
+      {title && (
+        <h2 className="text-uppercase fw-medium text-center">
+          Prodotti correlati
+        </h2>
+      )}
       <Swiper
         spaceBetween={20}
         centeredSlides={true}
@@ -30,7 +32,7 @@ export default function RelatedProducts({ items }) {
         }}
         loop={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="w-100 h-auto py-5"
+        className="w-100 h-auto pb-5"
       >
         {items.map((product, index) => (
           <SwiperSlide
@@ -41,6 +43,6 @@ export default function RelatedProducts({ items }) {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </>
   );
 }
