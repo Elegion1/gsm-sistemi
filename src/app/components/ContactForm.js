@@ -36,7 +36,7 @@ export default function ContactForm() {
           }
           form.classList.add("was-validated");
         },
-        false
+        false,
       );
     });
   }, []);
@@ -105,6 +105,17 @@ export default function ContactForm() {
             required
           ></textarea>
           <div className="invalid-feedback">Inserisci un messaggio</div>
+        </div>
+
+        <div className="visually-hidden" aria-hidden="true">
+          <label htmlFor="extra">Informazioni extra</label>
+          <input
+            type="text"
+            id="extra"
+            name="extra"
+            tabIndex="-1"
+            autoComplete="off"
+          />
         </div>
 
         <div className="d-flex justify-content-center align-items-center">
