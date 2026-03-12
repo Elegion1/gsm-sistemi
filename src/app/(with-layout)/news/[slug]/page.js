@@ -8,6 +8,27 @@ import Link from "next/link";
 import Article from "@/app/components/ArticleCard";
 import ArticleBody from "@/app/components/ArticleBody";
 
+function seededRandom(seed) {
+  let value = 0;
+  for (let i = 0; i < seed.length; i += 1) {
+    value = (value * 31 + seed.charCodeAt(i)) >>> 0;
+  }
+  return () => {
+    value = (value * 1664525 + 1013904223) >>> 0;
+    return value / 0x100000000;
+  };
+}
+
+function pickRandomItems(array, seed, count) {
+  const random = seededRandom(seed);
+  const items = [...array];
+  for (let i = items.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
+  return items.slice(0, count);
+}
+
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
@@ -33,10 +54,11 @@ export async function generateMetadata({ params }) {
 export default async function ArticlePage({ params }) {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
-  const articlesRelated = getAllArticles()
-    .filter((a) => a.slug !== slug)
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 3);
+  const articlesRelated = pickRandomItems(
+    getAllArticles().filter((a) => a.slug !== slug),
+    slug,
+    3,
+  );
 
   if (!article) {
     return (

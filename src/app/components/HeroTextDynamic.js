@@ -2,22 +2,20 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import useBreakpoint from "@/app/hooks/useBreakpoint";
 
 export default function HeroTextDynamic() {
   const [scroll, setScroll] = useState(0);
-  const [breakpoint, setBreakpoint] = useState("desktop"); // mobile | tablet | desktop
-  const [navbarHeight, setNavbarHeight] = useState(0);
+  const breakpoint = useBreakpoint();
+
+  const getNavbarHeight = () => {
+    const navbar = typeof document !== "undefined" && document.querySelector(".navbar");
+    return navbar?.offsetHeight ?? 0;
+  };
+
+  const [navbarHeight, setNavbarHeight] = useState(getNavbarHeight);
 
   useEffect(() => {
-    const checkSize = () => {
-      const w = window.innerWidth;
-      if (w < 576) setBreakpoint("mobile");
-      else if (w < 992) setBreakpoint("tablet");
-      else setBreakpoint("desktop");
-    };
-    checkSize();
-    window.addEventListener("resize", checkSize);
-
     const handleScroll = () => {
       if (breakpoint === "desktop") {
         setScroll(window.scrollY);
@@ -25,15 +23,15 @@ export default function HeroTextDynamic() {
         setScroll(0);
       }
     };
+
     window.addEventListener("scroll", handleScroll);
 
-    // altezza navbar
-    const navbar = document.querySelector(".navbar");
-    if (navbar) setNavbarHeight(navbar.offsetHeight);
+    const handleResize = () => setNavbarHeight(getNavbarHeight());
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", checkSize);
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, [breakpoint]);
 

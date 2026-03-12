@@ -5,13 +5,15 @@ import Image from "next/image";
 import ContactCTA from "@/app/components/ContactCTA";
 import PageLayout from "@/app/components/PageLayout";
 import RelatedProducts from "@/app/components/RelatedProducts";
+import PartnerCard from "@/app/components/PartnerCard";
+
+const visiblePartners = partners.filter((partner) => partner.show !== false);
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
 
   const product = products.find((p) => p.slug === slug);
-  const brands = partners.filter((p) => product.brands.includes(p.name));
 
   if (!product) {
     return {
@@ -19,6 +21,10 @@ export async function generateMetadata({ params }) {
       description: "Esplora i nostri prodotti",
     };
   }
+
+  const brands = visiblePartners.filter((p) =>
+    product.brands.includes(p.name),
+  );
 
   return {
     title: `${product.name} | ${owner.companyName}`,
@@ -69,15 +75,15 @@ export default async function ProductPage({ params }) {
   const { slug } = await params;
 
   const product = products.find((p) => p.slug === slug);
-  const brands = partners.filter((p) =>
-    product.brands.some((b) => b.name === p.name),
-  );
-  console.log("Brands:", brands);
-  const productText = buildProductText(product);
 
   if (!product) {
     return <div>Prodotto non trovato</div>;
   }
+
+  const brands = visiblePartners.filter((p) =>
+    product.brands.some((b) => b.name === p.name),
+  );
+  const productText = buildProductText(product);
 
   const relatedProducts = products.filter((p) => p.slug !== slug);
 
@@ -101,28 +107,8 @@ export default async function ProductPage({ params }) {
             {brands.length > 0 && (
               <div className="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
                 {brands.map((partner, index) => (
-                  <div
-                    key={index}
-                    className="col d-flex justify-content-center"
-                  >
-                    <div
-                      className="d-flex justify-content-center align-items-center"
-                      style={{ width: 200, height: 100 }}
-                    >
-                      <div
-                        className={partner.background}
-                        style={{ padding: "10px", display: "inline-block" }}
-                      >
-                        <Image
-                          src={partner.logo}
-                          alt={partner.name}
-                          width={200}
-                          height={100}
-                          style={{ objectFit: "contain" }}
-                          loading="lazy"
-                        />
-                      </div>
-                    </div>
+                  <div key={index} className="col d-flex justify-content-center">
+                    <PartnerCard partner={partner} showOverlay={false} />
                   </div>
                 ))}
               </div>

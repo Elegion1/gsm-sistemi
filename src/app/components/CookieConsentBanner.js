@@ -25,14 +25,10 @@ export default function CookieConsentBanner({
   className = "",
   style = {},
 }) {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const status = getCookie(COOKIE_NAME);
-    if (!status) {
-      setShow(true);
-    }
-  }, []);
+  const [show, setShow] = useState(() => {
+    if (typeof document === "undefined") return false;
+    return !getCookie(COOKIE_NAME);
+  });
 
   const handleAccept = () => {
     setCookie(COOKIE_NAME, "accepted", COOKIE_EXP_DAYS);

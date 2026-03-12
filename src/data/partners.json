@@ -5,7 +5,8 @@
     "link": "https://www.alessiporte.it",
     "description": "Azienda specializzata nella produzione e commercializzazione di porte per interni, blindate e tagliafuoco, offrendo soluzioni per l'accesso e la sicurezza",
     "id": "3ab9e019-ab29-4a8f-929f-0057ddb96340",
-    "slug": "alessi-porte"
+    "slug": "alessi-porte",
+    "show": true
   },
   {
     "name": "Bettio",
@@ -13,7 +14,8 @@
     "link": "https://www.bettio.it",
     "description": "Leader nella produzione di zanzariere e sistemi di protezione dagli insetti, con un'ampia gamma di modelli adatti a finestre e porte-finestre",
     "id": "ba224b4a-ad1f-470d-b2bf-e9da73abb073",
-    "slug": "bettio"
+    "slug": "bettio",
+    "show": true
   },
   {
     "name": "Sharknet",
@@ -21,7 +23,8 @@
     "link": "https://www.sharknet.it",
     "description": "Produttore di zanzariere e sistemi di schermatura innovativi, noti per la qualità dei materiali e la praticità d'uso dei loro prodotti",
     "id": "4a92c1ad-7bad-482c-b041-3ff74cd42e2d",
-    "slug": "sharknet"
+    "slug": "sharknet",
+    "show": true
   },
   {
     "name": "Zanzar Sistem",
@@ -29,7 +32,8 @@
     "link": "https://www.zanzar.it",
     "description": "Specializzata nella produzione di zanzariere, tende tecniche e sistemi di protezione solare, offrendo soluzioni personalizzate per ogni esigenza",
     "id": "e23e5022-d5ac-4eed-9485-f8d203512f7b",
-    "slug": "zanzar-sistem"
+    "slug": "zanzar-sistem",
+    "show": true
   },
   {
     "name": "Pracal",
@@ -37,7 +41,8 @@
     "link": "https://www.pracal.it",
     "description": "Azienda attiva nel settore delle tende da sole, pergole e coperture solari, focalizzata su design, qualità e innovazione per l'outdoor",
     "id": "235cd24d-c949-4e34-8a05-2326fa043390",
-    "slug": "pracal"
+    "slug": "pracal",
+    "show": true
   },
   {
     "name": "Roto",
@@ -45,7 +50,8 @@
     "link": "https://ftt.roto-frank.com/it-it/",
     "description": "Fornitore di ferramenta e accessori per finestre e porte, in particolare sistemi per finestre da tetto, garantendo funzionalità e sicurezza",
     "id": "ae7e9467-0445-4d98-8060-a17bfce50e8c",
-    "slug": "roto"
+    "slug": "roto",
+    "show": true
   },
   {
     "name": "RG Distribution",
@@ -53,7 +59,8 @@
     "link": "https://www.regdistribution.com/",
     "description": "Distributore di prodotti per l'edilizia e i serramenti, offrendo una vasta gamma di soluzioni professionali per l'installazione e la manutenzione",
     "id": "cea07bea-f301-48be-b9cc-332707144d33",
-    "slug": "rg-distribution"
+    "slug": "rg-distribution",
+    "show": true
   },
   {
     "name": "Tecnoplast",
@@ -61,7 +68,8 @@
     "link": "https://www.tecnoplastinfissi.com/",
     "description": "Produttore di infissi e serramenti in PVC, alluminio e legno-alluminio, focalizzato sull'efficienza energetica e l'isolamento termoacustico",
     "id": "526f8f6d-6fc8-4d98-b1fc-61826780de25",
-    "slug": "tecnoplast"
+    "slug": "tecnoplast",
+    "show": false
   },
   {
     "name": "Tempotest",
@@ -70,7 +78,8 @@
     "link": "https://www.para.it/",
     "description": "Brand di tessuti per tende da sole, arredamento per esterni e applicazioni nautiche, noto per la resistenza, i colori e la protezione UV",
     "id": "d2d39bde-03e7-4805-8a51-95a7cac10c64",
-    "slug": "tempotest"
+    "slug": "tempotest",
+    "show": true
   },
   {
     "name": "Forte",
@@ -78,7 +87,8 @@
     "link": "https://www.fortesrl.it",
     "description": "Azienda che si occupa della produzione e commercializzazione di serramenti, come porte e finestre, garantendo elevati standard di sicurezza e isolamento",
     "id": "96280bb5-e67e-4cde-94f6-600d77c60282",
-    "slug": "forte"
+    "slug": "forte",
+    "show": true
   },
   {
     "name": "Bressani",
@@ -86,7 +96,8 @@
     "link": "https://www.bressanidesign.it",
     "description": "Specializzata in tende da sole, pergole e sistemi di copertura per esterni, combinando funzionalità e design sofisticato",
     "id": "d783bcb1-bfde-40b3-8533-8036ca28f643",
-    "slug": "bressani"
+    "slug": "bressani",
+    "show": true
   },
   {
     "name": "Cento",
@@ -94,7 +105,8 @@
     "link": "https://www.centotendetecniche.com/",
     "description": "Produttore di tende tecniche per interni ed esterni, come veneziane, rulli e plissé, utili per la gestione della luce e del calore",
     "id": "b96bcfcc-38bd-4ff6-9813-76d498b24430",
-    "slug": "cento"
+    "slug": "cento",
+    "show": true
   },
   {
     "name": "Effetrade",
@@ -103,7 +115,8 @@
     "link": "https://www.effetrade.it",
     "description": "Azienda fornitrice di materiali e accessori per serramenti e porte blindate, operando nel settore della componentistica",
     "id": "a265741b-5c7d-4670-bb2d-5625e873f80d",
-    "slug": "effetrade"
+    "slug": "effetrade",
+    "show": true
   },
   {
     "name": "Sliding Crystal",
@@ -112,7 +125,8 @@
     "link": "https://www.slidingcrystal.com",
     "description": "Specializzata in vetrate panoramiche scorrevoli e sistemi di chiusura in vetro, ideali per balconi, terrazzi e spazi esterni",
     "id": "573ffe00-0166-43f3-a17a-ca63d6a4f8ae",
-    "slug": "sliding-crystal"
+    "slug": "sliding-crystal",
+    "show": true
   },
   {
     "name": "Colò Security System",
@@ -121,6 +135,17 @@
     "link": "https://www.colosecuritysystem.com/",
     "description": "Azienda specializzata in porte blindate su misura e sistemi di sicurezza per abitazioni e attività commerciali, con soluzioni personalizzate che uniscono protezione, design e materiali di alta qualità",
     "id": "",
-    "slug": "colo-security-system"
+    "slug": "colo-security-system",
+    "show": true
+  },
+  {
+    "name": "Fossati Serramenti",
+    "logo": "/images/partners/fossati.png",
+    "background": "",
+    "link": "https://www.fossatiserramenti.it/",
+    "description": "Azienda italiana leader, attiva dal 1920 con sede a Piacenza, specializzata nella produzione di serramenti in PVC, alluminio e legno/alluminio di alta qualità. Fondendo artigianalità e tecnologia 4.0 in 3 poli produttivi, offre soluzioni personalizzate (finestre, portoncini, scorrevoli) orientate all'efficienza energetica, sostenibilità e Made in Italy",
+    "id": "",
+    "slug": "fossati-serramenti",
+    "show": true
   }
 ]

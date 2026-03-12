@@ -15,6 +15,9 @@ import reviews from "@/data/reviews.json";
 import { getRecentArticles } from "@/scripts/articlesLoader";
 import ReviewCard from "@/app/components/ReviewCard";
 import Article from "@/app/components/ArticleCard";
+import PartnerCard from "@/app/components/PartnerCard";
+
+const visiblePartners = partners.filter((partner) => partner.show !== false);
 
 const products = productsData.slice(0, 8);
 
@@ -112,26 +115,8 @@ export default function Home() {
           <section id="partners">
             <h3 className="text-uppercase fw-medium text-center">Partners</h3>
             <div className="d-flex flex-wrap justify-content-center align-items-center gap-2 gap-md-5 mt-4">
-              {partners.map((partner, index) => (
-                <div
-                  key={index}
-                  className="d-flex justify-content-center align-items-center p-3"
-                  style={{ width: 200, height: 200 }}
-                >
-                  <div
-                    className={`${partner.background}`}
-                    style={{ padding: "10px", display: "inline-block" }}
-                  >
-                    <Image
-                      src={partner.logo}
-                      alt={partner.name}
-                      width={200} // dimensione desiderata
-                      height={100} // mantiene proporzioni
-                      style={{ objectFit: "contain" }}
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
+              {visiblePartners.map((partner, index) => (
+                <PartnerCard key={index} partner={partner} showOverlay={false} />
               ))}
             </div>
           </section>

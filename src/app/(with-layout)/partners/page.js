@@ -2,10 +2,12 @@ import Hero from "@/app/components/Hero";
 import PageLayout from "@/app/components/PageLayout";
 import partners from "@/data/partners.json";
 import owner from "@/data/owner.json";
-import Image from "next/image";
-import Link from "next/link";
 import InfoCard from "@/app/components/InfoCard";
 import Button from "@/app/components/Button";
+import Link from "next/link";
+import PartnerCard from "@/app/components/PartnerCard";
+
+const visiblePartners = partners.filter((partner) => partner.show !== false);
 
 export const metadata = {
   title: `Partners | Collaborazioni di ${owner.companyName}`,
@@ -59,38 +61,8 @@ export default function PartnersPage() {
             certificati e assistenza costante.
           </h3>
           <div className="d-flex flex-wrap justify-content-around align-items-center gap-md-5 gap-1 mt-4 mx-auto">
-            {partners.map((partner, index) => (
-              <Link
-                aria-label="Vai al sito del partner"
-                key={index}
-                target="_blank"
-                href={partner.link}
-                className="text-decoration-none"
-              >
-                <div
-                  className="partner position-relative d-flex justify-content-center align-items-center p-3"
-                  style={{ width: 200, height: 200 }}
-                >
-                  <div
-                    className={`p-3 ${partner.background}`}
-                    style={{ display: "inline-block" }}
-                  >
-                    <Image
-                      src={partner.logo}
-                      alt={partner.name}
-                      width={200} // dimensione desiderata
-                      height={100} // mantiene proporzioni
-                      style={{ objectFit: "contain" }}
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="partner-overlay position-absolute bottom-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center p-2">
-                    <p className="text-white fw-normal text-center">
-                      {partner.description}
-                    </p>
-                  </div>
-                </div>
-              </Link>
+            {visiblePartners.map((partner, index) => (
+              <PartnerCard key={index} partner={partner} href={partner.link} />
             ))}
           </div>
         </section>

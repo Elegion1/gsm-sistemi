@@ -6,7 +6,7 @@
     "slug": "infissi-pvc",
     "id": "70c26741-8146-49e8-9add-093384b52ed5",
     "materials": ["PVC"],
-    "brands": [{ "name": "Tecnoplast", "image": "tecnoplast.png" }],
+    "brands": [{ "name": "Fossati Serramenti", "image": "fossati.png" }],
     "useCases": ["abitazioni", "uffici"],
     "features": [
       "isolamento termico",
@@ -137,7 +137,7 @@
     "slug": "infissi-alluminio",
     "id": "25aaff33-5ec5-44eb-aa9b-7c8a5b55905c",
     "materials": ["Alluminio"],
-    "brands": [{ "name": "Tecnoplast", "image": "tecnoplast.png" }],
+    "brands": [{ "name": "Fossati Serramenti", "image": "fossati.png" }],
     "useCases": ["abitazioni moderne", "vetrate"],
     "features": ["resistenza", "design moderno"],
     "automation": false
@@ -149,7 +149,7 @@
     "slug": "infissi-legno",
     "id": "6f820499-fb11-4561-9e14-88a5b35f2721",
     "materials": ["Legno"],
-    "brands": [{ "name": "Tecnoplast", "image": "tecnoplast.png" }],
+    "brands": [{ "name": "Fossati Serramenti", "image": "fossati.png" }],
     "useCases": ["abitazioni", "ambienti classici"],
     "features": ["isolamento termico", "estetica naturale"],
     "automation": false
@@ -161,7 +161,7 @@
     "slug": "infissi-legno-alluminio",
     "id": "5ae1f965-eeaa-4efc-9bd5-0d7cf3eb376c",
     "materials": ["Legno", "Alluminio"],
-    "brands": [{ "name": "Tecnoplast", "image": "tecnoplast.png" }],
+    "brands": [{ "name": "Fossati Serramenti", "image": "fossati.png" }],
     "useCases": ["abitazioni", "edifici moderni"],
     "features": ["durabilità", "isolamento"],
     "automation": false

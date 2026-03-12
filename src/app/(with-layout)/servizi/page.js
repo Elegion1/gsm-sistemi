@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Hero from "@/app/components/Hero";
 import PageLayout from "@/app/components/PageLayout";
 import ContactCTA from "@/app/components/ContactCTA";
@@ -38,12 +39,15 @@ export default function ServiziPage() {
               <div className="col" key={index}>
                 <div className="p-3 border h-100 d-flex flex-column">
                   {item.icon && (
-                    <img
-                      src={item.icon}
-                      alt={item.name}
-                      className="mx-auto mb-3"
-                      style={{ width: 80, height: 80 }}
-                    />
+                    <div className="mx-auto mb-3" style={{ width: 80, height: 80 }}>
+                      <Image
+                        src={item.icon}
+                        alt={item.name}
+                        width={80}
+                        height={80}
+                        style={{ objectFit: "contain" }}
+                      />
+                    </div>
                   )}
                   <h3 className="text-uppercase fs-5 fw-bold text-a text-center">
                     {item.name}
