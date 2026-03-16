@@ -59,7 +59,7 @@ export default function Navbar() {
       </Link>
 
       <div className="m-0">
-        <ul className="list-unstyled d-flex gap-4 m-0">
+        <ul className="list-unstyled d-flex gap-3 gap-lg-4 m-0">
           {navItems.map((item) => (
             <li key={item.name}>
               <Link
