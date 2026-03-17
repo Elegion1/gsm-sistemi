@@ -24,6 +24,10 @@ p {
   border-radius: 0;
 }
 
+.btnContactFormSubmitted * {
+  pointer-events: none;
+}
+
 .text-shadow {
   text-shadow: 0 1 6px rgba(0, 0, 0, 0.7);
 }

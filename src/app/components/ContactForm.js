@@ -119,7 +119,7 @@ export default function ContactForm() {
         </div>
 
         <div className="d-flex justify-content-center align-items-center">
-          <button type="submit" className="btn bg-a text-light rounded-0">
+          <button type="submit" className="btn bg-a text-light rounded-0 btnContactFormSubmitted">
             {status === "loading" ? "Invio in corso..." : "Invia richiesta"}
           </button>
         </div>
