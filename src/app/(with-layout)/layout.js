@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import Script from "next/script";
 import BootstrapClient from "@/app/components/BootstrapClient";
-import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { Montserrat } from "next/font/google";
 import "@/app/globals.css";
 import Head from "next/head";
@@ -25,12 +25,31 @@ export default function RootLayout({ children }) {
       className={montserrat.variable}
       data-scroll-behavior="smooth"
     >
-      <GoogleAnalytics gaId="G-140X47N3ML" />
-      <GoogleTagManager gtmId="GTM-K7QSNQTH" />
-      <Head>
-        <meta name="apple-mobile-web-app-title" content="GSM Sistemi" />
-      </Head>
       <body>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-140X47N3ML"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-140X47N3ML', { send_page_view: true });`}
+        </Script>
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-K7QSNQTH');`}
+        </Script>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K7QSNQTH"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <SeoData />
         <CookieConsentBanner />
         <Navbar />
