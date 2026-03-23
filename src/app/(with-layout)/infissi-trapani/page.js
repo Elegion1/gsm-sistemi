@@ -45,7 +45,6 @@ const localBenefits = [
 ];
 
 export default function InfissiTrapaniPage() {
-  console.log(targetedProducts);
   return (
     <>
       {/* Possiamo riutilizzare HeroHome o crearne una specifica con testo dedicato */}
@@ -93,7 +92,7 @@ export default function InfissiTrapaniPage() {
               {/* Ridotta la colonna immagine a col-lg-4 */}
               <div className="col-lg-4 d-flex justify-content-center">
                 <div
-                  className="rounded shadow-lg overflow-hidden"
+                  className="overflow-hidden"
                   style={{ maxWidth: "350px" }}
                 >
                   <Image
@@ -117,7 +116,7 @@ export default function InfissiTrapaniPage() {
           {/* SEZIONE PRODOTTI TARGETIZZATI */}
           <section
             id="prodotti-locali"
-            className="py-5 bg-light rounded-4 px-3"
+            className="py-5 px-3"
           >
             <h2 className="text-uppercase fw-medium text-center mb-5">
               Le nostre soluzioni per il territorio
@@ -164,7 +163,7 @@ export default function InfissiTrapaniPage() {
               <h2 className="text-uppercase fw-medium text-center mb-5">
                 Cosa dicono i nostri clienti
               </h2>
-              <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+              <div className="d-flex justify-content-center align-items-start gap-4 flex-wrap">
                 {reviews
                   // Filtriamo per includere solo quelle che contengono "Google" nel titolo
                   .filter((item) =>
