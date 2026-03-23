@@ -1,9 +1,24 @@
 [
   {
-    "user": "Kevin C.",
-    "title": "",
-    "body": "Settimana scorsa mi hanno installato zanzariere e porte interne: lavoro pulito, rapido e curato nei minimi dettagli. Davvero impeccabili.",
-    "rating": 5
+    "user": "Fabio Mazzara",
+    "title": "Recensione Google",
+    "body": "Ho contattato la Gsm per delle zanzariere, ho trovato dei professionisti che in tempi rapidissimi hanno consegnato e installato dei prodotti di ottima fattura ad un ottimo prezzo. Li consiglio vivamente. Grazie Giovanni e Mario.",
+    "rating": 5,
+    "date": "2026-03-23"
+  },
+  {
+    "user": "Alberto Cicala",
+    "title": "Recensione Google",
+    "body": "Mi hanno installato delle zanzariere, ottimo lavoro eseguito, personale qualificato, ve lo consiglio.",
+    "rating": 5,
+    "date": "2026-03-19"
+  },
+  {
+    "user": "Irene G.",
+    "title": "Recensione Google",
+    "body": "Ho contattato GSM Sistemi per l’installazione di zanzariere e di una tenda da sole e sono rimasta davvero soddisfatta. Lavoro eseguito con precisione, materiali di ottima qualità e grande attenzione ai dettagli. Personale gentile, disponibile e puntuale. Consiglio assolutamente questa azienda a chi cerca professionalità e serietà.",
+    "rating": 5,
+    "date": "2026-03-15"
   },
   {
     "user": "Laura P.",
@@ -12,10 +27,11 @@
     "rating": 5
   },
   {
-    "user": "Irene G.",
-    "title": "",
-    "body": "Ho contattato GSM Sistemi per l’installazione di zanzariere e di una tenda da sole e sono rimasta davvero soddisfatta. Lavoro eseguito con precisione, materiali di ottima qualità e grande attenzione ai dettagli. Personale gentile, disponibile e puntuale. Consiglio assolutamente questa azienda a chi cerca professionalità e serietà.",
-    "rating": 5
+    "user": "Kevin C.",
+    "title": "Recensione Google",
+    "body": "Settimana scorsa mi hanno installato zanzariere e porte interne: lavoro pulito, rapido e curato nei minimi dettagli. Davvero impeccabili.",
+    "rating": 5,
+    "date": "2026-03-10"
   },
   {
     "user": "Marco D.",

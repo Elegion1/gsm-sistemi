@@ -22,7 +22,7 @@ const visiblePartners = partners.filter((partner) => partner.show !== false);
 const products = productsData.slice(0, 8);
 
 export const metadata = {
-  title: `${owner.companyName} | Infissi, Serramenti, Porte e Zanzariere a ${owner.address.city}`,
+  title: `Infissi e Serramenti a Trapani | GSM Sistemi - Alluminio, PVC, Legno`,
   description: owner.seoDescription,
   keywords: owner.seoKeywords,
   alternates: {
@@ -47,26 +47,52 @@ export default function Home() {
       <HeroHome />
       <main>
         <PageLayout>
-          <section id="chi-siamo">
-            <h3 className="text-uppercase fw-medium text-center">Chi siamo</h3>
+          <section id="chi-siamo" className="py-5">
+            {/* Titolo ottimizzato SEO: H2 è meglio di H3 per la sezione principale */}
+            <h2 className="text-uppercase fw-bold text-center mb-5">
+              Infissi e Serramenti a Trapani
+            </h2>
+            <h3 className="text-uppercase fw-medium text-center">chi siamo</h3>
+
             <p className="text-center mt-4 fs-4 fw-normal">
-              <span className="fw-bold">{owner.legalName},</span> con sede in{" "}
-              <span className="fw-bold">
+              <span className="fw-bold">{owner.legalName}</span> è il punto di
+              riferimento a<span className="fw-bold"> Trapani ed Erice </span>
+              per la vendita e l'installazione di
+              <span className="fw-bold text-primary">
+                {" "}
+                <Link href="/infissi-trapani">infissi in PVC, alluminio e legno</Link>
+              </span>
+              . La nostra sede in{" "}
+              <span className="fw-medium">
                 {owner.address.street}, {owner.address.streetNumber} –{" "}
-                {owner.address.locality} ({owner.address.province}),
-              </span>{" "}
-              è un’azienda giovane specializzata in infissi, serramenti, porte,
-              zanzariere e sistemi oscuranti.
+                {owner.address.locality} ({owner.address.province})
+              </span>
+              , ci permette di servire con rapidità tutta la provincia, offrendo
+              soluzioni certificate per il risparmio energetico.
             </p>
+
             <p className="text-center mt-4 fs-4 fw-normal">
-              Offriamo un servizio completo: consulenza, sopralluoghi,
-              progettazione, posa in opera e assistenza, con attenzione alla
-              qualità dei materiali e alle normative sulle agevolazioni fiscali.
+              Siamo specializzati in un servizio "chiavi in mano" che include:
+              <strong>
+                {" "}
+                consulenza tecnica, sopralluoghi gratuiti a Trapani e provincia
+              </strong>
+              , progettazione su misura e posa in opera qualificata di porte
+              interne, zanzariere, sistemi oscuranti e grate di sicurezza.
             </p>
+
             <p className="text-center mt-4 fs-4 fw-normal">
-              La nostra missione è fornire soluzioni tecniche affidabili,
-              precise e durevoli, affiancando privati e aziende con
-              professionalità e trasparenza.
+              La nostra missione è garantire il massimo isolamento termico e
+              acustico per la tua casa, aiutandoti a usufruire delle{" "}
+              <strong>agevolazioni fiscali e dei bonus infissi 2026</strong>.
+              Affianchiamo privati e aziende con soluzioni tecniche precise,
+              durevoli e dal design moderno.
+            </p>
+
+            {/* Un piccolo tocco di Local SEO extra: citare le zone vicine */}
+            <p className="text-center mt-3 fs-6 text-muted italic">
+              Operiamo con successo a Trapani, Erice, Valderice, Paceco, Marsala
+              e comuni limitrofi.
             </p>
           </section>
           <section id="blog">
@@ -116,7 +142,11 @@ export default function Home() {
             <h3 className="text-uppercase fw-medium text-center">Partners</h3>
             <div className="d-flex flex-wrap justify-content-center align-items-center gap-2 gap-md-5 mt-4">
               {visiblePartners.map((partner, index) => (
-                <PartnerCard key={index} partner={partner} showOverlay={false} />
+                <PartnerCard
+                  key={index}
+                  partner={partner}
+                  showOverlay={false}
+                />
               ))}
             </div>
           </section>

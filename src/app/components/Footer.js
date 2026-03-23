@@ -21,7 +21,7 @@ export default function Footer() {
           <p className="text-d">Qualità, design e sicurezza per la tua casa</p>
         </div>
         <div className="col-md-4 col-12 d-flex flex-column align-items-start align-items-md-center text-start text-md-center">
-          <p className="text-uppercase text-d m-0 fw-medium">navigazione</p>
+          <p className="text-uppercase text-d m-0 mb-2 fw-medium">navigazione</p>
 
           {links.map((link, index) => (
             <Link
