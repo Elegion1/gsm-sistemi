@@ -97,7 +97,7 @@ export default function InfissiTrapaniPage() {
                   style={{ maxWidth: "350px" }}
                 >
                   <Image
-                    src="/images/jobs/job 10.jpg"
+                    src="/images/jobs/job 10.JPG"
                     alt="Installazione Infissi Trapani GSM Sistemi"
                     width={400} // Dimensioni nominali ridotte
                     height={533}
