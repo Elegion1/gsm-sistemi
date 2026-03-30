@@ -47,11 +47,69 @@ export default function Home() {
       <HeroHome />
       <main>
         <PageLayout>
+          <h2 className="text-uppercase fw-bold text-center mb-5">
+            Infissi e Serramenti a Trapani
+          </h2>
+          <section id="prodotti">
+            <h3 className="text-uppercase fw-medium text-center">Prodotti</h3>
+            <div className="d-flex flex-wrap justify-content-center align-items-center gap-4 mt-4">
+              {products.map((product) => (
+                <ProductCard key={product.slug} product={product} />
+              ))}
+            </div>
+            <div className="w-100 d-flex justify-content-center align-items-center mt-3">
+              <Link aria-label="Vai alla pagina prodotti" href="/prodotti">
+                <Button
+                  className="bg-a text-light"
+                  label="Vedi tutti i prodotti"
+                />
+              </Link>
+            </div>
+          </section>
+
+          <section id="blog">
+            <h3 className="text-uppercase fw-medium text-center">blog</h3>
+            <div className="row g-4 mt-4 justify-content-center">
+              {recentArticles.map((article) => (
+                <div key={article.slug} className="col-12 col-lg-6">
+                  <Article article={article} height={25} />
+                </div>
+              ))}
+            </div>
+            <div className="d-flex justify-content-center align-items-center mt-4">
+              <Link className="btn bg-a text-d text-center" href="/news">
+                Vai al blog
+              </Link>
+            </div>
+          </section>
+
+          <section id="perche-sceglierci">
+            <h3 className="text-uppercase fw-medium text-center">
+              Perché sceglierci
+            </h3>
+            <div className="d-flex flex-wrap justify-content-center align-items-center gap-5 mt-4">
+              {cta.map((item, index) => (
+                <InfoCard key={index} title={item} />
+              ))}
+            </div>
+          </section>
+
+          <section id="partners">
+            <h3 className="text-uppercase fw-medium text-center">Partners</h3>
+            <div className="d-flex flex-wrap justify-content-center align-items-center gap-2 gap-md-5 mt-4">
+              {visiblePartners.map((partner, index) => (
+                <PartnerCard
+                  key={index}
+                  partner={partner}
+                  showOverlay={false}
+                />
+              ))}
+            </div>
+          </section>
+
           <section id="chi-siamo" className="py-5">
             {/* Titolo ottimizzato SEO: H2 è meglio di H3 per la sezione principale */}
-            <h2 className="text-uppercase fw-bold text-center mb-5">
-              Infissi e Serramenti a Trapani
-            </h2>
+
             <h3 className="text-uppercase fw-medium text-center">chi siamo</h3>
 
             <p className="text-center mt-4 fs-4 fw-normal">
@@ -60,7 +118,9 @@ export default function Home() {
               per la vendita e l'installazione di
               <span className="fw-bold text-primary">
                 {" "}
-                <Link href="/infissi-trapani">infissi in PVC, alluminio e legno</Link>
+                <Link href="/infissi-trapani">
+                  infissi in PVC, alluminio e legno
+                </Link>
               </span>
               . La nostra sede in{" "}
               <span className="fw-medium">
@@ -94,61 +154,6 @@ export default function Home() {
               Operiamo con successo a Trapani, Erice, Valderice, Paceco, Marsala
               e comuni limitrofi.
             </p>
-          </section>
-          <section id="blog">
-            <h3 className="text-uppercase fw-medium text-center">blog</h3>
-            <div className="row g-4 mt-4 justify-content-center">
-              {recentArticles.map((article) => (
-                <div key={article.slug} className="col-12 col-lg-6">
-                  <Article article={article} height={25} />
-                </div>
-              ))}
-            </div>
-            <div className="d-flex justify-content-center align-items-center mt-4">
-              <Link className="btn bg-a text-d text-center" href="/news">
-                Vai al blog
-              </Link>
-            </div>
-          </section>
-          <section id="prodotti">
-            <h3 className="text-uppercase fw-medium text-center">Prodotti</h3>
-            <div className="d-flex flex-wrap justify-content-center align-items-center gap-4 mt-4">
-              {products.map((product) => (
-                <ProductCard key={product.slug} product={product} />
-              ))}
-            </div>
-            <div className="w-100 d-flex justify-content-center align-items-center mt-3">
-              <Link aria-label="Vai alla pagina prodotti" href="/prodotti">
-                <Button
-                  className="bg-a text-light"
-                  label="Vedi tutti i prodotti"
-                />
-              </Link>
-            </div>
-          </section>
-
-          <section id="perche-sceglierci">
-            <h3 className="text-uppercase fw-medium text-center">
-              Perché sceglierci
-            </h3>
-            <div className="d-flex flex-wrap justify-content-center align-items-center gap-5 mt-4">
-              {cta.map((item, index) => (
-                <InfoCard key={index} title={item} />
-              ))}
-            </div>
-          </section>
-
-          <section id="partners">
-            <h3 className="text-uppercase fw-medium text-center">Partners</h3>
-            <div className="d-flex flex-wrap justify-content-center align-items-center gap-2 gap-md-5 mt-4">
-              {visiblePartners.map((partner, index) => (
-                <PartnerCard
-                  key={index}
-                  partner={partner}
-                  showOverlay={false}
-                />
-              ))}
-            </div>
           </section>
 
           {jobs.length > 0 && (
