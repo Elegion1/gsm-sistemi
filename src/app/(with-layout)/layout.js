@@ -3,7 +3,6 @@ import Script from "next/script";
 import BootstrapClient from "@/app/components/BootstrapClient";
 import { Montserrat } from "next/font/google";
 import "@/app/globals.css";
-import Head from "next/head";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import SeoData from "@/app/components/SeoData";
