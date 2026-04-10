@@ -37,7 +37,7 @@ export default function NewsPage() {
             <div
               className="d-flex flex-column overflow-y-auto gap-3 pb-3"
               style={{
-                maxHeight:"150vh",
+                maxHeight: "150vh",
                 scrollSnapType: "y mandatory",
                 WebkitOverflowScrolling: "touch",
               }}
@@ -61,6 +61,7 @@ export default function NewsPage() {
                   <Link
                     href={`/news/${article.slug}`}
                     className="btn text-d bg-a mt-2"
+                    aria-label={`Leggi di più sull'articolo: ${article.title}`}
                   >
                     Leggi di più
                   </Link>
@@ -96,8 +97,12 @@ export default function NewsPage() {
                             alt={job.images[0].description || "installazione"}
                             width={300}
                             height={200}
-                          sizes="300px"
-                          style={{ objectFit: "contain", width: "100%", height: "100%" }}
+                            sizes="300px"
+                            style={{
+                              objectFit: "contain",
+                              width: "100%",
+                              height: "100%",
+                            }}
                             loading="lazy"
                           />
                         </div>

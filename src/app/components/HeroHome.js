@@ -19,9 +19,11 @@ export default function HeroHome() {
             alt="gsm-sistemi"
             width={1400}
             height={1008}
-            sizes="100vw"
+            sizes="(max-width: 768px) 600px, 1200px"
             style={{ width: "100%", height: "auto" }}
-            priority={true}
+            fetchPriority="high"
+            imageSizes={[16, 32, 48, 64, 96, 128, 256, 384]}
+            deviceSizes={[640, 750, 828, 1080, 1200, 1920]}
           />
         </div>
         <HeroTextDynamic />
