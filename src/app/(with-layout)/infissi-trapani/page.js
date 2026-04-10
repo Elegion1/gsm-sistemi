@@ -56,7 +56,7 @@ export default function InfissiTrapaniPage() {
       <main>
         <PageLayout>
           {/* SEZIONE SEO CORE */}
-          <section id="infissi-trapani-expert" className="py-5">
+          <section id="infissi-trapani-expert" className="py-3 py-md-5">
             <h1 className="text-uppercase fw-bold text-center mb-4">
               Specialisti in Infissi e Serramenti a Trapani
             </h1>
@@ -77,11 +77,11 @@ export default function InfissiTrapaniPage() {
                   solo finestre, ma una consulenza completa per migliorare il
                   comfort della tua casa.
                 </p>
-                <div className="row mt-5 mb-3 g-3 p-3">
+                <div className="row mb-3 g-3 p-3">
                   {localBenefits.map((benefit, i) => (
                     <div key={i} className="col-12 col-md-6">
                       <div className="fs-5 d-flex align-items-center">
-                        <i className="bi bi-check-circle-fill text-primary me-3"></i>
+                        <i className="bi bi-check-circle-fill text-c me-3"></i>
                         <span>{benefit}</span>
                       </div>
                     </div>
@@ -93,20 +93,21 @@ export default function InfissiTrapaniPage() {
               <div className="col-lg-4 d-flex justify-content-center">
                 <div
                   className="overflow-hidden"
-                  style={{ maxWidth: "350px" }}
+                  style={{ maxWidth: "80vw" }}
                 >
                   <Image
                     src="/images/jobs/job 10.JPG"
                     alt="Installazione Infissi Trapani GSM Sistemi"
                     width={400} // Dimensioni nominali ridotte
                     height={533}
+                    sizes="(max-width: 768px) 100vw, 350px"
                     style={{
-                      objectFit: "cover",
+                      objectFit: "contain",
                       width: "100%",
                       height: "auto",
                       maxHeight: "450px", // Limita l'altezza massima per non allungare la sezione
                     }}
-                    priority // Essendo nella parte alta della pagina, aiuta il caricamento LCP
+                    priority
                   />
                 </div>
               </div>
@@ -116,7 +117,7 @@ export default function InfissiTrapaniPage() {
           {/* SEZIONE PRODOTTI TARGETIZZATI */}
           <section
             id="prodotti-locali"
-            className="py-5 px-3"
+            className="py-3 py-md-5 px-3"
           >
             <h2 className="text-uppercase fw-medium text-center mb-5">
               Le nostre soluzioni per il territorio
@@ -137,7 +138,7 @@ export default function InfissiTrapaniPage() {
           </section>
 
           {/* PERCHÉ SCEGLIERCI (LOCAL) */}
-          <section id="perche-noi" className="py-5">
+          <section id="perche-noi" className="py-3 py-md-5">
             <h2 className="text-uppercase fw-medium text-center mb-5">
               Perché scegliere GSM Sistemi a Trapani
             </h2>
@@ -159,11 +160,11 @@ export default function InfissiTrapaniPage() {
 
           {/* RECENSIONI LOCALI */}
           {reviews.length > 0 && (
-            <section id="feedback-trapani" className="py-5">
+            <section id="feedback-trapani" className="py-3 py-md-5">
               <h2 className="text-uppercase fw-medium text-center mb-5">
                 Cosa dicono i nostri clienti
               </h2>
-              <div className="d-flex justify-content-center align-items-start gap-4 flex-wrap">
+              <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
                 {reviews
                   // Filtriamo per includere solo quelle che contengono "Google" nel titolo
                   .filter((item) =>

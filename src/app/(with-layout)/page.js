@@ -47,7 +47,7 @@ export default function Home() {
       <HeroHome />
       <main>
         <PageLayout>
-          <h2 className="text-uppercase fw-bold text-center mb-5">
+          <h2 className="text-uppercase fw-bold text-center my-3">
             Infissi e Serramenti a Trapani
           </h2>
           <section id="prodotti">
@@ -102,6 +102,7 @@ export default function Home() {
                   key={index}
                   partner={partner}
                   showOverlay={false}
+                  href={partner.link}
                 />
               ))}
             </div>
@@ -165,7 +166,8 @@ export default function Home() {
                 {jobs.map((job, index) => (
                   <div
                     key={index}
-                    className="d-flex justify-content-center align-items-center flex-wrap"
+                    className="d-flex justify-content-center align-items-center flex-shrink-0"
+                    style={{ width: 300, height: 200 }}
                   >
                     {job.images.length > 1 ? (
                       <Carousel
@@ -183,7 +185,8 @@ export default function Home() {
                           alt={job.images[0].description || "installazione"}
                           width={300}
                           height={200}
-                          style={{ objectFit: "contain" }}
+                          sizes="300px"
+                          style={{ objectFit: "contain", width: "100%", height: "100%" }}
                           loading="lazy"
                         />
                       </div>
@@ -196,8 +199,8 @@ export default function Home() {
 
           {reviews.length > 0 && (
             <section id="clienti">
-              <h3 className="text-uppercase fw-medium text-center">Clienti</h3>
-              <div className="d-flex justify-content-center align-items-center mt-4 gap-5 flex-wrap">
+              <h3 className="text-uppercase fw-medium text-center">Recensioni</h3>
+              <div className="d-flex justify-content-center align-items-center gap-5 mt-4 flex-wrap">
                 {reviews.map((item, index) => (
                   <ReviewCard key={index} review={item} />
                 ))}

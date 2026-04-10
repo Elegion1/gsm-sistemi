@@ -9,7 +9,8 @@ export default function HeroTextDynamic() {
   const breakpoint = useBreakpoint();
 
   const getNavbarHeight = () => {
-    const navbar = typeof document !== "undefined" && document.querySelector(".navbar");
+    const navbar =
+      typeof document !== "undefined" && document.querySelector(".navbar");
     return navbar?.offsetHeight ?? 0;
   };
 
@@ -40,15 +41,15 @@ export default function HeroTextDynamic() {
     breakpoint === "mobile"
       ? "fs-4"
       : breakpoint === "tablet"
-      ? "fs-2"
-      : "fs-1";
+        ? "fs-2"
+        : "fs-1";
 
   const subtitleSize =
     breakpoint === "mobile"
       ? "fs-6"
       : breakpoint === "tablet"
-      ? "fs-5"
-      : "fs-4";
+        ? "fs-5"
+        : "fs-4";
 
   // comportamento differenziato
   let translateY;
@@ -72,7 +73,8 @@ export default function HeroTextDynamic() {
       }}
     >
       <h1 className={`h1 fw-bold text-shadow ${titleSize}`}>
-        Infissi a Trapani su misura – Fornitura e installazione
+        Infissi a Trapani su misura
+        <span className="d-none d-md-block fw-semibold">Fornitura e installazione</span>
       </h1>
       <h2 className={`text-shadow ${subtitleSize}`}>
         Soluzioni in alluminio, PVC e legno-alluminio per case e attività

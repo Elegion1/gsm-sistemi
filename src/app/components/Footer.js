@@ -14,6 +14,7 @@ export default function Footer() {
             alt="logo-gsm-sistemi"
             width={366} // serve solo per Next.js Image optimization
             height={75} // serve solo per Next.js Image optimization
+            sizes="(max-width: 768px) 80vw, 366px"
             style={{ width: "100%", height: "auto", maxWidth: "366px" }}
             loading="eager"
             className="mb-2"
@@ -21,7 +22,7 @@ export default function Footer() {
           <p className="text-d">Qualità, design e sicurezza per la tua casa</p>
         </div>
         <div className="col-md-4 col-12 d-flex flex-column align-items-start align-items-md-center text-start text-md-center">
-          <p className="text-uppercase text-d m-0 mb-2 fw-medium">navigazione</p>
+          <p className="text-uppercase text-d m-0 mb-2 fw-semibold fs-5">navigazione</p>
 
           {links.map((link, index) => (
             <Link
@@ -41,7 +42,7 @@ export default function Footer() {
             sitemap
           </Link>
         </div>
-        <div className="col-md-4 col-12 text-d text-md-end text-start">
+        <div className="col-md-4 col-12 text-d text-md-end text-start mt-3 mt-md-0">
           <p className="m-0 fw-medium">{owner.legalName}</p>
           <p className="m-0">
             {owner.address.street}, {owner.address.streetNumber} <br />

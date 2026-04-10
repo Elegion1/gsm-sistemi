@@ -45,7 +45,8 @@ export default function ServiziPage() {
                         alt={item.name}
                         width={80}
                         height={80}
-                        style={{ objectFit: "contain" }}
+                        sizes="80px"
+                        style={{ objectFit: "contain", width: "100%", height: "100%" }}
                       />
                     </div>
                   )}

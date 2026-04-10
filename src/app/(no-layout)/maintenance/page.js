@@ -17,6 +17,7 @@ export default function MaintenancePage() {
           className="image"
           width={500}
           height={418}
+          sizes="(max-width: 768px) 80vw, 500px"
           style={{ objectFit: "contain" }}
         />
 
@@ -27,6 +28,7 @@ export default function MaintenancePage() {
           className="mosquito"
           width={209}
           height={280}
+          sizes="(max-width: 768px) 40vw, 209px"
           style={{ objectFit: "contain" }}
         />
       </div>

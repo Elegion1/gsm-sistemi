@@ -17,10 +17,11 @@ export default function HeroHome() {
           <Image
             src="/images/image.png"
             alt="gsm-sistemi"
-            width={2500}
-            height={1801}
+            width={1400}
+            height={1008}
+            sizes="100vw"
             style={{ width: "100%", height: "auto" }}
-            fetchPriority="high"
+            priority={true}
           />
         </div>
         <HeroTextDynamic />

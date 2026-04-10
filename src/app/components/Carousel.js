@@ -12,13 +12,13 @@ export default function Carousel({
   // Se c'è solo un'immagine, non mostriamo il carosello
   if (images.length === 1) {
     return (
-      <div style={{ width, height }}>
+      <div style={{ width, height, position: "relative", overflow: "hidden" }}>
         <Image
           src={images[0].path}
           alt={images[0].description}
-          width={width}
-          height={height}
-          style={{ objectFit }}
+          fill
+          sizes={`${width}px`}
+          style={{ objectFit, objectPosition: "center" }}
           loading="lazy"
         />
       </div>
@@ -30,22 +30,25 @@ export default function Carousel({
       id={id}
       className="carousel slide"
       data-bs-ride="carousel"
-      style={{ width, height }}
+      style={{ width, height, position: "relative", overflow: "hidden" }}
     >
-      <div className="carousel-inner">
+      <div className="carousel-inner" style={{ width: "100%", height: "100%" }}>
         {images.map((image, index) => (
           <div
             key={index}
             className={`carousel-item ${index === 0 ? "active" : ""}`}
+            style={{ width: "100%", height: "100%" }}
           >
-            <Image
-              src={image.path}
-              alt={image.description || "installazione"}
-              width={width}
-              height={height}
-              style={{ objectFit }}
-              loading="lazy"
-            />
+            <div style={{ position: "relative", width: "100%", height: "100%" }}>
+              <Image
+                src={image.path}
+                alt={image.description || "installazione"}
+                fill
+                sizes={`${width}px`}
+                style={{ objectFit, objectPosition: "center" }}
+                loading="lazy"
+              />
+            </div>
           </div>
         ))}
       </div>
@@ -76,3 +79,4 @@ export default function Carousel({
     </div>
   );
 }
+

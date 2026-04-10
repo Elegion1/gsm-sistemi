@@ -6,12 +6,8 @@ export default function Hero({
   title,
   description,
   image,
-
-  // default mobile
   imagePositionMobile = "center",
   imageHeightMobile = "40vh",
-
-  // default desktop
   imagePositionDesktop = "center",
   imageHeightDesktop = "60vh",
 }) {
@@ -21,7 +17,6 @@ export default function Hero({
     const checkSize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-
     checkSize();
     window.addEventListener("resize", checkSize);
     return () => window.removeEventListener("resize", checkSize);
@@ -32,22 +27,35 @@ export default function Hero({
 
   return (
     <section>
-      <div className="hero">
-        <div style={{ height: currentHeight }} className="hero-image">
+      <div className="hero" style={{ position: "relative" }}>
+        {/* FIX: Aggiunta position relative al genitore per risolvere il warning di products.png */}
+        <div
+          className="hero-image"
+          style={{
+            height: currentHeight,
+            position: "relative", // INDISPENSABILE per next/image "fill"
+            width: "100%",
+            overflow: "hidden",
+          }}
+        >
           <Image
             src={image}
             alt={title}
             fill
-            style={{ objectFit: "cover", objectPosition: currentPosition }}
-            priority
+            sizes="100vw"
+            style={{
+              objectFit: "cover",
+              objectPosition: currentPosition,
+            }}
+            priority // Caricamento immediato per LCP
           />
         </div>
 
-        <div className="hero-text">
-          <h1 className="text-uppercase fw-bold text-center text-shadow">
+        <div className="hero-text d-flex flex-column justify-content-center align-items-center text-center gap-3 px-md-5">
+          <h1 className="text-uppercase fw-bold text-shadow">
             {title}
           </h1>
-          <h2 className="fw-normal fs-4 text-center mt-3 text-shadow text-wrap mx-auto">
+          <h2 className="fw-normal fs-4 text-shadow text-wrap mx-auto">
             {description}
           </h2>
         </div>

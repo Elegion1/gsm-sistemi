@@ -96,7 +96,8 @@ export default function NewsPage() {
                             alt={job.images[0].description || "installazione"}
                             width={300}
                             height={200}
-                            style={{ objectFit: "contain" }}
+                          sizes="300px"
+                          style={{ objectFit: "contain", width: "100%", height: "100%" }}
                             loading="lazy"
                           />
                         </div>

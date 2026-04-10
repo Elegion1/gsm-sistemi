@@ -101,6 +101,7 @@ export default async function ProductPage({ params }) {
                 alt={product.name}
                 src={product.image}
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: "contain", objectPosition: "center" }}
               />
             </div>

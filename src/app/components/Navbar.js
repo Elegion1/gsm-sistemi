@@ -54,6 +54,7 @@ export default function Navbar() {
           alt="logo-gsm-sistemi"
           width={isMobile ? (shrink ? 140 : 180) : shrink ? 180 : 260}
           height={isMobile ? (shrink ? 30 : 40) : shrink ? 40 : 60}
+          sizes="(max-width: 768px) 40vw, 260px"
           style={{ objectFit: "contain", transition: "all 0.3s ease" }}
         />
       </Link>

@@ -129,10 +129,6 @@ p {
   opacity: 1;
 }
 
-.review-card {
-  width: 300px;
-}
-
 .fade-slide {
   opacity: 0;
   transform: translateY(10px);
