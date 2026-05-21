@@ -33,7 +33,9 @@ export default function NewsPage() {
       <PageLayout>
         <div className="row gap-3 gap-lg-0">
           <section className="col-12 col-md-6">
-            <h3 className="fw-normal fs-4 mb-3">Ultimi articoli</h3>
+            <h3 className="text-uppercase fw-medium text-center">
+              Ultimi Articoli
+            </h3>
             <div
               className="d-flex flex-column overflow-y-auto gap-3 pb-3"
               style={{
@@ -45,7 +47,7 @@ export default function NewsPage() {
               {articles.map((article) => (
                 <article
                   key={article.slug}
-                  className="flex-shrink-0 bg-light p-3 rounded"
+                  className="flex-shrink-0 bg-light p-3 article-card"
                   style={{
                     minHeight: "120px", // altezza minima per ciascun articolo
                     scrollSnapAlign: "start",
