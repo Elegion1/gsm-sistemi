@@ -1,0 +1,341 @@
+{
+  "articleRelevance": {
+    "infissi-pvc": [
+      {
+        "slug": "infissi-in-pvc-vantaggi-limiti",
+        "score": 95,
+        "reason": "tema principale: infissi in PVC"
+      },
+      {
+        "slug": "prezzi-infissi-pvc-trapani-guida",
+        "score": 88,
+        "reason": "prezzi e scelta del prodotto"
+      },
+      {
+        "slug": "finestre-pvc-prezzi-con-montaggio",
+        "score": 80,
+        "reason": "finestre e sistemi in PVC"
+      }
+    ],
+    "infissi-alluminio": [
+      {
+        "slug": "finestre-in-alluminio",
+        "score": 93,
+        "reason": "tema principale: finestre in alluminio"
+      },
+      {
+        "slug": "costo-infissi-alluminio-trapani",
+        "score": 89,
+        "reason": "costi e vantaggi dell'alluminio"
+      },
+      {
+        "slug": "infissi-alluminio-taglio-termico-pro-contro",
+        "score": 84,
+        "reason": "prestazioni e isolamento"
+      }
+    ],
+    "infissi-legno": [
+      {
+        "slug": "infissi-alluminio-legno-pro-e-contro",
+        "score": 90,
+        "reason": "tema principale: materiali legno e alluminio"
+      },
+      {
+        "slug": "scegliere-infissi-giusti-trapani",
+        "score": 82,
+        "reason": "scelta dell'infisso giusto"
+      },
+      {
+        "slug": "migliori-infissi-anticondensa",
+        "score": 76,
+        "reason": "comfort e prestazioni"
+      }
+    ],
+    "infissi-legno-alluminio": [
+      {
+        "slug": "infissi-alluminio-legno-pro-e-contro",
+        "score": 94,
+        "reason": "tema principale: legno-alluminio"
+      },
+      {
+        "slug": "scegliere-infissi-giusti-trapani",
+        "score": 81,
+        "reason": "scelta del sistema perfetto"
+      },
+      {
+        "slug": "infissi-che-non-fanno-condensa",
+        "score": 78,
+        "reason": "prestazioni termoigrometriche"
+      }
+    ],
+    "porte-blindate": [
+      {
+        "slug": "porte-blindate-colo-security-system-trapani",
+        "score": 96,
+        "reason": "tema principale: porte blindate"
+      },
+      {
+        "slug": "classi-resistenza-porte-blindate-guida",
+        "score": 91,
+        "reason": "sicurezza e classi di resistenza"
+      },
+      {
+        "slug": "serramenti-e-sicurezza",
+        "score": 83,
+        "reason": "sicurezza degli accessi"
+      }
+    ],
+    "porte-tagliafuoco": [
+      {
+        "slug": "porte-tagliafuoco-rei-colo-trapani",
+        "score": 98,
+        "reason": "tema principale: porte tagliafuoco"
+      },
+      {
+        "slug": "serramenti-e-sicurezza",
+        "score": 85,
+        "reason": "sicurezza e compartimentazione"
+      },
+      {
+        "slug": "classi-resistenza-porte-blindate-guida",
+        "score": 95,
+        "reason": "resistenza e protezione"
+      }
+    ],
+    "zanzariere-su-misura": [
+      {
+        "slug": "tipi-zanzariere-guida-scelta",
+        "score": 94,
+        "reason": "tema principale: zanzariere"
+      },
+      {
+        "slug": "infissi-che-non-fanno-condensa",
+        "score": 71,
+        "reason": "comfort e protezione ambientale"
+      },
+      {
+        "slug": "scegliere-infissi-giusti-trapani",
+        "score": 68,
+        "reason": "scelta di soluzioni per la casa"
+      }
+    ],
+    "tapparelle": [
+      {
+        "slug": "tapparelle-in-alluminio-quando-convengono",
+        "score": 95,
+        "reason": "tema principale: tapparelle"
+      },
+      {
+        "slug": "frangisole-alternative-per-il-controllo-solare",
+        "score": 78,
+        "reason": "protezione solare e comfort"
+      },
+      {
+        "slug": "come-funziona-bonus-infissi-75",
+        "score": 69,
+        "reason": "agevolazioni per riqualificazione"
+      }
+    ],
+    "tende-da-sole": [
+      {
+        "slug": "frangisole-alternative-per-il-controllo-solare",
+        "score": 92,
+        "reason": "tema principale: controllo solare"
+      },
+      {
+        "slug": "tapparelle-in-alluminio-quando-convengono",
+        "score": 77,
+        "reason": "protezione da sole e ambienti esterni"
+      },
+      {
+        "slug": "scegliere-infissi-giusti-trapani",
+        "score": 63,
+        "reason": "soluzioni per comfort abitativo"
+      }
+    ],
+    "pavimentazione-spc": [
+      {
+        "slug": "pavimenti-spc-vs-parquet",
+        "score": 97,
+        "reason": "tema principale: pavimenti SPC"
+      },
+      {
+        "slug": "serramenti-e-sicurezza",
+        "score": 58,
+        "reason": "stile e qualità degli ambienti"
+      }
+    ]
+  },
+  "productRelevance": {
+    "infissi-pvc": [
+      {
+        "slug": "infissi-alluminio",
+        "score": 90,
+        "reason": "stesso ambito e uso domestico"
+      },
+      {
+        "slug": "infissi-legno-alluminio",
+        "score": 86,
+        "reason": "prestazioni e estetica simili"
+      },
+      {
+        "slug": "tapparelle",
+        "score": 74,
+        "reason": "accessori per finestre e facciate"
+      }
+    ],
+    "infissi-alluminio": [
+      {
+        "slug": "infissi-pvc",
+        "score": 90,
+        "reason": "stesso ambito e uso domestico"
+      },
+      {
+        "slug": "infissi-legno-alluminio",
+        "score": 88,
+        "reason": "design e prestazioni affini"
+      },
+      {
+        "slug": "vetrate-panoramiche",
+        "score": 76,
+        "reason": "grandi superfici vetrate"
+      }
+    ],
+    "infissi-legno": [
+      {
+        "slug": "infissi-legno-alluminio",
+        "score": 91,
+        "reason": "stesso materiale e stile estetico"
+      },
+      {
+        "slug": "infissi-alluminio",
+        "score": 79,
+        "reason": "soluzioni per infissi premium"
+      },
+      {
+        "slug": "tapparelle",
+        "score": 69,
+        "reason": "complementari alle aperture"
+      }
+    ],
+    "infissi-legno-alluminio": [
+      {
+        "slug": "infissi-legno",
+        "score": 91,
+        "reason": "stesso materiale e stile estetico"
+      },
+      {
+        "slug": "infissi-alluminio",
+        "score": 84,
+        "reason": "prestazioni tecniche simili"
+      },
+      {
+        "slug": "vetrate-panoramiche",
+        "score": 74,
+        "reason": "alta qualità estetica e isolamento"
+      }
+    ],
+    "porte-blindate": [
+      {
+        "slug": "porte-tagliafuoco",
+        "score": 88,
+        "reason": "stesso ambito sicurezza porte"
+      },
+      {
+        "slug": "zanzariere-su-misura",
+        "score": 64,
+        "reason": "protezione e comfort abitativo"
+      },
+      {
+        "slug": "porte-interne",
+        "score": 58,
+        "reason": "soluzioni per l'accesso interno"
+      }
+    ],
+    "porte-tagliafuoco": [
+      {
+        "slug": "porte-blindate",
+        "score": 88,
+        "reason": "stesso ambito sicurezza porte"
+      },
+      {
+        "slug": "porte-interne",
+        "score": 61,
+        "reason": "accessi e compartimentazioni"
+      },
+      {
+        "slug": "zanzariere-su-misura",
+        "score": 55,
+        "reason": "soluzioni per la sicurezza ambientale"
+      }
+    ],
+    "zanzariere-su-misura": [
+      {
+        "slug": "tende-da-sole",
+        "score": 72,
+        "reason": "protezione da sole e ambienti esterni"
+      },
+      {
+        "slug": "tapparelle",
+        "score": 70,
+        "reason": "controllo luce e comfort"
+      },
+      {
+        "slug": "infissi-pvc",
+        "score": 62,
+        "reason": "soluzioni complementari per finestre"
+      }
+    ],
+    "tapparelle": [
+      {
+        "slug": "tende-da-sole",
+        "score": 78,
+        "reason": "controllo luce e ambienti esterni"
+      },
+      {
+        "slug": "infissi-pvc",
+        "score": 73,
+        "reason": "complementari alle aperture"
+      },
+      {
+        "slug": "vetrate-panoramiche",
+        "score": 66,
+        "reason": "fruizione di luce naturale"
+      }
+    ],
+    "tende-da-sole": [
+      {
+        "slug": "tapparelle",
+        "score": 78,
+        "reason": "controllo luce e ambienti esterni"
+      },
+      {
+        "slug": "zanzariere-su-misura",
+        "score": 72,
+        "reason": "protezione e comfort all'aperto"
+      },
+      {
+        "slug": "vetrate-panoramiche",
+        "score": 65,
+        "reason": "uso degli spazi esterni"
+      }
+    ],
+    "pavimentazione-spc": [
+      {
+        "slug": "parquet",
+        "score": 89,
+        "reason": "stesso ambito pavimenti interni"
+      },
+      {
+        "slug": "porte-interne",
+        "score": 56,
+        "reason": "soluzioni per arredo interno"
+      },
+      {
+        "slug": "box-doccia",
+        "score": 52,
+        "reason": "arredo bagno e finiture"
+      }
+    ]
+  }
+}

@@ -11,7 +11,7 @@ export default function ArticleCard({ article, height }) {
         {article.title}
       </h3>
       <p className="text-muted text-center">{article.excerpt || ""}</p>
-      <Link href={`/news/${article.slug}`} className="btn bg-a text-d">
+      <Link href={`/articles/${article.slug}`} className="btn bg-a text-d">
         Leggi di più
       </Link>
     </article>

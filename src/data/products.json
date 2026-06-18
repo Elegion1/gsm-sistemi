@@ -66,6 +66,29 @@
     "automation": false
   },
   {
+    "name": "Porte Tagliafuoco",
+    "description": "Protezione antincendio certificata e compartimentazione fumi per la sicurezza di edifici commerciali, condomini e locali tecnici.",
+    "image": "/images/products/porte-tagliafuoco.png",
+    "slug": "porte-tagliafuoco",
+    "id": "2e7d704c-3ba2-4786-9a29-d5885e783ab1",
+    "materials": ["Acciaio"],
+    "brands": [
+      { "name": "Colò Security System", "image": "colo-security-system.png" }
+    ],
+    "useCases": [
+      "locali tecnici",
+      "condomini",
+      "attività commerciali",
+      "ingressi residenziali"
+    ],
+    "features": [
+      "resistenza al fuoco EI",
+      "compartimentazione fumi",
+      "sicurezza antieffrazione combinata"
+    ],
+    "automation": false
+  },
+  {
     "name": "Zanzariere su Misura",
     "description": "Protezione dagli insetti senza rinunciare alla luce naturale e al comfort della tua casa.",
     "image": "/images/products/zanzariere-su-misura.png",

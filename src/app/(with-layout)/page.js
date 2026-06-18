@@ -72,12 +72,12 @@ export default function Home() {
             <div className="row g-4 mt-4 justify-content-center">
               {recentArticles.map((article) => (
                 <div key={article.slug} className="col-12 col-lg-6">
-                  <Article article={article} height={25} />
+                  <Article article={article} height={30} />
                 </div>
               ))}
             </div>
             <div className="d-flex justify-content-center align-items-center mt-4">
-              <Link className="btn bg-a text-d text-center" href="/news">
+              <Link className="btn bg-a text-d text-center" href="/articles">
                 Vai al blog
               </Link>
             </div>

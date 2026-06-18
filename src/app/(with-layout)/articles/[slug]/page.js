@@ -46,7 +46,7 @@ export async function generateMetadata({ params }) {
     title: `${article.title} | Blog | ${owner.companyName}`,
     description: `${article.excerpt}`,
     alternates: {
-      canonical: `/news/${slug}`,
+      canonical: `/articles/${slug}`,
     },
   };
 }
@@ -67,7 +67,7 @@ export default async function ArticlePage({ params }) {
         style={{ height: "60vh" }}
       >
         <h1 className="text-center text-uppercase">Articolo non trovato</h1>
-        <Link className="btn bg-a text-d" href="/news">
+        <Link className="btn bg-a text-d" href="/articles">
           Torna al blog
         </Link>
       </div>

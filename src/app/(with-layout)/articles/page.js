@@ -8,13 +8,13 @@ import Carousel from "@/app/components/Carousel";
 import ContactCTA from "@/app/components/ContactCTA";
 
 export const metadata = {
-  title: "News | Blog su infissi, serramenti e zanzariere a Trapani",
+  title: "Blog | Articoli su infissi, serramenti e zanzariere a Trapani",
   description:
     "Rimani aggiornato con le ultime notizie e consigli su infissi, serramenti e zanzariere a Trapani. Scopri le novità del settore e le migliori soluzioni per la tua casa.",
   keywords:
     "news infissi Trapani, blog serramenti Trapani, aggiornamenti zanzariere Trapani, consigli infissi, novità serramenti, guide zanzariere",
   alternates: {
-    canonical: "/news",
+    canonical: "/articles",
   },
 };
 
@@ -28,7 +28,7 @@ export default function NewsPage() {
         description={
           "News e aggiornamenti su infissi, serramenti e zanzariere a Trapani"
         }
-        image={"/images/news.png"}
+        image={"/images/articles.png"}
       />
       <PageLayout>
         <div className="row gap-3 gap-lg-0">
@@ -61,7 +61,7 @@ export default function NewsPage() {
                   </div>
                   <p className="text-muted">{article.excerpt}</p>
                   <Link
-                    href={`/news/${article.slug}`}
+                    href={`/articles/${article.slug}`}
                     className="btn text-d bg-a mt-2"
                     aria-label={`Leggi di più sull'articolo: ${article.title}`}
                   >

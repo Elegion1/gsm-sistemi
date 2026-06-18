@@ -25,7 +25,7 @@ export default async function sitemap() {
     }
 
     return {
-      url: `${BASE_URL}/news/${article.slug}`,
+      url: `${BASE_URL}/articles/${article.slug}`,
       lastModified: articleDate,
       changefreq: "weekly",
       priority: 0.6,
