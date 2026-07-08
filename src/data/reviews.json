@@ -1,13 +1,34 @@
 [
   {
-    "user": "Fabio Mazzara",
+    "user": "Maria G.",
+    "title": "Recensione Google",
+    "body": "Ho scelto GSM Sistemi per la mia nuova casa a Milano e si è rivelata una decisione assolutamente vincente. \nL’azienda ha gestito in modo completo la fornitura e la posa di porte interne, infissi, porta blindata, tapparelle, pavimentazione SPC, box doccia e la coibentazione dei cassonetti. \nServizio impeccabile sotto ogni punto di vista: grande professionalità, puntualità e precisione in ogni fase del lavoro. \nIl vero valore aggiunto è stata la gestione “chiavi in mano”: si sono occupati di tutto, dalla consulenza iniziale fino al montaggio finale, coordinando interamente anche la squadra operativa. \nNonostante la distanza (azienda con sede a Trapani e lavori eseguiti a Milano), non si è percepita alcuna difficoltà organizzativa: tutto è stato gestito in modo fluido ed estremamente efficiente. \nMateriali di alta qualità e risultato finale oltre le aspettative. \nConsiglio vivamente GSM Sistemi a chi cerca un partner affidabile, competente e capace di garantire un servizio completo senza pensieri.",
+    "rating": 5,
+    "date": "2026-05-15"
+  },
+  {
+    "user": "Margherita B.",
+    "title": "Recensione Google",
+    "body": "Montate zanzariere in tutto l’appartamento. Lavoro impeccabile, ottima qualità del prodotto e massima professionalità. Grazie Giovanni è stato un piacere conoscerti.",
+    "rating": 5,
+    "date": "2026-05-10"
+  },
+  {
+    "user": "Giuseppe",
+    "title": "Recensione Google",
+    "body": "Esperienza super positiva! La qualità è davvero ottima, si vede che sono fatti bene, e anche il prezzo è più che giusto rispetto a quello che offrono. \nI ragazzi sono il top: veloci, organizzati e molto professionali, ma soprattutto alla mano. Hanno lavorato benissimo e hanno lasciato tutto pulito. \n Consigliatissimi!",
+    "rating": 5,
+    "date": "2026-05-01"
+  },
+  {
+    "user": "Fabio M.",
     "title": "Recensione Google",
     "body": "Ho contattato la Gsm per delle zanzariere, ho trovato dei professionisti che in tempi rapidissimi hanno consegnato e installato dei prodotti di ottima fattura ad un ottimo prezzo. Li consiglio vivamente. Grazie Giovanni e Mario.",
     "rating": 5,
     "date": "2026-03-23"
   },
   {
-    "user": "Alberto Cicala",
+    "user": "Alberto C.",
     "title": "Recensione Google",
     "body": "Mi hanno installato delle zanzariere, ottimo lavoro eseguito, personale qualificato, ve lo consiglio.",
     "rating": 5,

@@ -186,7 +186,11 @@ export default function Home() {
                           width={300}
                           height={200}
                           sizes="300px"
-                          style={{ objectFit: "contain", width: "100%", height: "100%" }}
+                          style={{
+                            objectFit: "contain",
+                            width: "100%",
+                            height: "100%",
+                          }}
                           loading="lazy"
                         />
                       </div>
@@ -198,11 +202,20 @@ export default function Home() {
           )}
 
           {reviews.length > 0 && (
-            <section id="clienti">
-              <h3 className="text-uppercase fw-medium text-center">Recensioni</h3>
-              <div className="d-flex justify-content-center align-items-center gap-5 mt-4 flex-wrap">
+            <section id="clienti" className="py-5">
+              <h3 className="text-uppercase fw-medium text-center mb-4">
+                Recensioni
+              </h3>
+
+              {/* Contenitore Masonry in puro CSS */}
+              <div
+                style={{ columns: "350px 2", columnGap: "2rem" }}
+                className="mx-auto style-masonry"
+              >
                 {reviews.map((item, index) => (
-                  <ReviewCard key={index} review={item} />
+                  <div key={index} className="d-inline-block w-100 mb-4">
+                    <ReviewCard review={item} />
+                  </div>
                 ))}
               </div>
             </section>
