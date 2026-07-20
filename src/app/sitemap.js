@@ -4,7 +4,7 @@ import products from "@/data/products.json";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-const BASE_URL = "https://gsm-sistemi.it";
+const BASE_URL = "https://www.gsm-sistemi.it";
 // Questa costante viene valutata una sola volta all'avvio del server/build
 const LAST_MODIFIED_GLOBAL = new Date();
 
