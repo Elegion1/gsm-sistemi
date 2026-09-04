@@ -15,7 +15,15 @@ const montserrat = Montserrat({
   style: ["normal"],
 });
 
-export const metadata = { metadataBase: new URL("https://www.gsm-sistemi.it") };
+export const metadata = {
+  metadataBase: new URL("https://www.gsm-sistemi.it"),
+  title: {
+    default: "Infissi e Serramenti a Trapani | GSM Sistemi",
+    template: "%s | GSM Sistemi",
+  },
+  description:
+    "Vendita e installazione di infissi, serramenti in alluminio, PVC e legno a Trapani. Soluzioni su misura per isolamento termico e acustico.",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -25,13 +33,21 @@ export default function RootLayout({ children }) {
       data-scroll-behavior="smooth"
     >
       <body>
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-140X47N3ML"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-140X47N3ML', { send_page_view: true });`}
+        {/* Impostazione di default per Consent Mode v2 */}
+        <Script id="google-consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              'analytics_storage': 'denied',
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied'
+            });
+          `}
         </Script>
+
+        {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});
@@ -41,6 +57,7 @@ export default function RootLayout({ children }) {
               f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-K7QSNQTH');`}
         </Script>
+
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K7QSNQTH"
@@ -49,6 +66,7 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+
         <SeoData />
         <CookieConsentBanner />
         <Navbar />
