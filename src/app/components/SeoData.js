@@ -14,7 +14,7 @@ export const jsonLd = {
   name: owner.legalName,
   telephone: owner.phone2 || owner.phone || owner.landline,
   email: owner.email,
-  url: owner.website,
+  url: owner.url,
   sameAs: [
     owner.socials.facebook,
     owner.socials.instagram,
@@ -22,6 +22,17 @@ export const jsonLd = {
     owner.socials.google,
   ].filter(Boolean),
   image: owner.logoUrl,
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Trapani",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Provincia di Trapani",
+    },
+  ],
+  knowsAbout: ["Infissi", "Serramenti", "Infissi in PVC", "Infissi in alluminio"],
   address: {
     "@type": "PostalAddress",
     streetAddress: `${owner.address.street} ${owner.address.streetNumber}`,

@@ -27,12 +27,19 @@ const targetedProducts = productsData
   .slice(0, 4);
 
 export const metadata = {
-  title: `Migliori Infissi a Trapani | Prezzi e Posa Qualificata | GSM Sistemi`,
-  description: `Cerchi infissi a Trapani? GSM Sistemi offre serramenti in PVC e Alluminio ad alta efficienza energetica. Sopralluoghi gratuiti a Trapani, Erice e provincia. Scopri i Bonus 2026.`,
+  title: `Infissi a Trapani | Vendita, Installazione e Preventivi | GSM Sistemi`,
+  description: `Cerchi infissi a Trapani? GSM Sistemi propone serramenti in PVC, alluminio e legno, sopralluoghi e posa qualificata a Trapani, Erice e provincia.`,
   keywords:
-    "infissi trapani, serramenti trapani, infissi pvc trapani, montaggio infissi trapani, preventivo infissi trapani",
+    "infissi trapani, infissi a trapani, serramenti trapani, infissi pvc trapani, montaggio infissi trapani, preventivo infissi trapani",
   alternates: {
     canonical: "/infissi-trapani",
+  },
+  openGraph: {
+    title: "Infissi a Trapani | GSM Sistemi",
+    description:
+      "Vendita e installazione di infissi in PVC, alluminio e legno a Trapani, Erice e provincia.",
+    url: "/infissi-trapani",
+    type: "website",
   },
 };
 
