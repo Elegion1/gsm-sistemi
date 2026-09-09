@@ -5,6 +5,7 @@ excerpt: "Il famoso 75% si riferisce al bonus per la sostituzione degli infissi 
 slug: "come-funziona-bonus-infissi-75"
 ---
 
+![come funziona il bonus infissi 75%](/images/articles/bonus-infissi.jpeg)
 
 Il 75% non è un semplice sconto standard: indica la detrazione prevista dal **Bonus Barriere Architettoniche**, che può includere anche la sostituzione degli infissi se rientra nei requisiti dell’intervento.
 

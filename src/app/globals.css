@@ -122,6 +122,13 @@ p {
   height: var(--card-height);
 }
 
+.prose img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 992px) {
   .article-card {
     height: auto;

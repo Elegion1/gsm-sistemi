@@ -1,6 +1,6 @@
 ---
 title: "Zanzariere per l'estate: come scegliere il modello giusto a Trapani"
-date: "2026-07-08"
+date: "08/07/2026"
 excerpt: "Con vento, salsedine e caldo intenso, scegliere la zanzariera giusta a Trapani fa la differenza. Ecco materiali, modelli e consigli pratici per l'estate."
 slug: "zanzariere-per-estate-trapani"
 ---

@@ -5,6 +5,8 @@ excerpt: "Non tutte le porte blindate sono uguali. Tra un appartamento in condom
 slug: "classi-resistenza-porte-blindate-guida"
 ---
 
+![classi di resistenza porta blindata](/images/articles/porte-blindate-classe5.jpg)
+
 Quando si parla di sicurezza domestica, la porta blindata è il primo scudo. Ma come capire se quella che stai acquistando è davvero adatta al tuo contesto? La risposta sta nella **Classe di Resistenza (RC)**, un valore che indica quanto tempo e quali attrezzi servono a uno scassinatore per forzarla.
 
 ### Classe 3: Lo standard ideale per l'appartamento
